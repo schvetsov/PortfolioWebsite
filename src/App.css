@@ -4,8 +4,12 @@
   src: local('MyFont'), url(./Dual/Dual-300.otf) format('opentype');
 }
 @font-face {
-  font-family: 'Nauman';
+  font-family: 'Nauman-Reg';
   src: local('MyFont'), url(./Nauman/Nauman_Regular_Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Nauman-Med';
+  src: local('MyFont'), url(./Nauman/Nauman-Medium.otf) format('opentype');
 }
 @font-face {
   font-family: 'Metrisch';
@@ -27,13 +31,16 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Nauman, Helvetica, sans-serif;
+  font-family: Nauman-Reg, Helvetica, sans-serif;
 }
 
 .title {
-  background-color: rgba(28, 51, 54, 0.9);
-  border: 1px solid white;
-  color: rgb(221, 221, 221);
+  background-color: rgba(59, 59, 59, 0);
+  /* background-color: rgba(28, 51, 54, 0.9); */
+  /* border: 1px solid white; */
+  /* color: rgb(221, 221, 221); */
+  color: rgb(75, 75, 75);
+  font-family: Nauman-Med, Helvetica, sans-serif;
 }
 
   .title-container {
@@ -42,38 +49,72 @@ p {
     padding: 10px;
     width: 1000px;
     margin: auto;
-    text-shadow: 2px 2px 5px black;
-    box-shadow: 20px -10px 25px rgb(42, 42, 42), -20px -10px 25px rgb(42, 42, 42);
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* box-shadow: 20px -10px 25px rgb(42, 42, 42), -20px -10px 25px rgb(42, 42, 42); */
   }
 
     .title-sub-container {
+      /* border: 1px solid black; */
       padding: 10px;
+    }
+
+    #linkedInIcon {
+
     }
 
       .name {
         font-size: 32px;
         display: block;
+        /* border: 1px solid black; */
+        /* text-shadow: 2px 2px 5px black; */
       }
 
       .name-bottom {
         font-size: 16px;
         display: block;
+        /* padding-bottom: 10px; */
+        /* border: 1px solid black; */
+        /* text-shadow: 2px 2px 5px black; */
+      }
+
+      .empty-space {
+        /* width: 156px; */
+        width: 100px;
+      }
+
+      .title-sub-container > a {
+        font-size: 24px;
+        color: rgb(116, 116, 116);
+        /* border: 1px solid black; */
       }
 
 .navbar {
   display: flex;
-  background-color: rgba(128, 128, 128, 0.2);
+  /* background-color: rgb(209, 209, 209); */
+  /* background-color: rgba(128, 128, 128, 0.1); */
+  /* background-image: linear-gradient(to bottom right, 
+  rgba(255, 187, 0, 0.1), 
+  rgba(181, 94, 201, 0.1)); */
   font-size: 16px;
-  border-bottom: 1px solid white;
   justify-content: center;
+  /* border-width: 1px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      rgba(255, 0, 0, 0.9), 
+      rgba(255, 0, 255, 0.9)
+    ) 1 stretch; */
 }
 
 .navbar a {
   color: black;
-  padding: 8px 20px;
+  padding: 6px 20px;
   text-decoration: none;
   text-align: center;
-  width: 300px;
+  width: 120px;
 }
 
 .navbar a:hover {
@@ -91,7 +132,7 @@ p {
     padding-right: 40px;
     padding-bottom: 40px;
     height: 70%;
-    width: 940px;
+    width: 540px;
     margin: auto;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -104,7 +145,7 @@ p {
       margin: auto;
       color: white;
       background-color: rgba(51, 51, 51, 1);
-      padding: 80px 160px;
+      padding: 80px 60px;
       font-size: 16px;
       text-shadow: 1px 1px 1px black;
       box-shadow: 5px 5px 10px rgb(42, 42, 42);
@@ -117,8 +158,8 @@ p {
       }
 
 .footer {
-  background-color: rgba(165, 165, 165, 0.1);
-  border-top: 1px solid rgba(212, 212, 212, 0.4);
+  /* background-color: rgba(165, 165, 165, 0.1);
+  border-top: 1px solid rgba(212, 212, 212, 0.4); */
   color: rgb(255, 255, 255);
   font-size: 12px;
   position: fixed;
