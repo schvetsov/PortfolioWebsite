@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import About from './About';
+import Resume from './Resume';
 
 class MenuBar extends Component {
   render() {
@@ -12,14 +13,35 @@ class MenuBar extends Component {
             <div class="navbar">
                 <Link to="/home">Home</Link>
                 <Link to="/about">About</Link>
-                <a href="#">Resume</a>
-                <a href="#">Portfolio</a>
+                <Link to="/resume">Resume</Link>
+                <div className="dropdown">
+                    <div className="noselect">Portfolio</div>
+                    <div className="dropdown-content">
+                        <Link to="/project1">QuickQuote Mobile</Link>
+                        <Link to="/project2">Import Algorithm</Link>
+                        <Link to="/project3">Rating Engine</Link>
+                        <Link to="/project4">Web Scraper</Link>
+                        <Link to="/project5">Time Value of Money Calculator</Link>
+                    </div>
+                </div>
             </div>
             <Route path="/home" exact component={Home} />
             <Route path="/about" exact component={About} />
+            <Route path="/resume" exact component={Resume} />
         </div>
     );
   }
 }
 
 export default MenuBar;
+
+/*          
+<li className="dropdown">
+              <a href="" class="dropbtn">Portfolio</a>
+              <div className="dropdown-content">
+              <Link to="/project1">Project1</Link>
+              <Link to="/project2">Project2</Link>
+              <Link to="/project3">Project3</Link>
+              <Link to="/project4">Project4</Link>
+              </div>
+          </li> */

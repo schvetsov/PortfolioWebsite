@@ -23,31 +23,33 @@ class App extends Component {
 </head>
         <div className="title">
           <div className="title-container">
-            <div className="title-sub-container">
+            <div className="title-sub-container" id="left-side">
               <span className="name">(Stan)islav Alexeevitch Chvetsov</span>
-              <span className="name-bottom">--------------------------------------Aspiring software developer</span>
+              <span className="name-bottom">---Aspiring software developer</span>
             </div>
             {/* <div className="title-sub-container">
               <span><img src={node} height = '36px'/></span>
             </div> */}
-            <div className="title-sub-container">
-            <span><img src={logo} height = '36px'/></span>
-            </div>
-            <div className="title-sub-container">
-              <span><img src={node} height = '36px'/></span>
-            </div>
-            <div className="title-sub-container">
-            <span><img src={redux} height = '36px'/></span>
-            </div>
-            <div className="title-sub-container">
-            <span className="empty-space"></span>
-            </div>
-            <div className="title-sub-container" id="linkedInIcon">
-            <a href="https://www.linkedin.com/in/stan-chvetsov-224143a5/" target="_blank"><i id="linkedIn" className="fab fa-linkedin"></i></a>
-            </div>
-            <div className="title-sub-container">
-            {/* <span><img src={github} height = '36px'/></span> */}
-            <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>
+            <div className="title-sub-container" id="right-side">
+                <div className="title-sub-container">
+                <span><img src={logo} height = '36px'/></span>
+                </div>
+                <div className="title-sub-container">
+                  <span><img src={node} height = '36px'/></span>
+                </div>
+                <div className="title-sub-container">
+                <span><img src={redux} height = '36px'/></span>
+                </div>
+                <div className="title-sub-container">
+                <span className="empty-space"></span>
+                </div>
+                <div className="title-sub-container">
+                <a href="https://www.linkedin.com/in/stan-chvetsov-224143a5/" target="_blank"><i id="linkedIn" className="fab fa-linkedin"></i></a>
+                </div>
+                <div className="title-sub-container">
+                {/* <span><img src={github} height = '36px'/></span> */}
+                <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>
+                </div>
             </div>
           </div>
         </div>
@@ -55,7 +57,7 @@ class App extends Component {
           <MenuBar />
         </div>
         <div className="footer">
-          - Page built with React -
+          Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons (L->R): React, Node, Redux
         </div>
       </div>
       </BrowserRouter>
