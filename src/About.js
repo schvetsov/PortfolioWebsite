@@ -36,6 +36,10 @@ class About extends Component {
                   I have concluded without doubt that software development is the most enjoyable of 
                   these roles.
               </p>
+              <ul>
+                <li><span id="dash">-</span><div id="home">Home</div><span id="dash">-</span></li>
+                <li>About</li>
+              </ul>
             </div>
           </div>
           

@@ -25,7 +25,7 @@ class App extends Component {
           <div className="title-container">
             <div className="title-sub-container" id="left-side">
               <span className="name">(Stan)islav Alexeevitch Chvetsov</span>
-              <span className="name-bottom">---Aspiring software developer</span>
+              <span className="name-bottom"><div className="name-bottom-line"></div><div>Aspiring software developer</div></span>
             </div>
             {/* <div className="title-sub-container">
               <span><img src={node} height = '36px'/></span>

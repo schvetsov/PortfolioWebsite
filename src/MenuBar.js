@@ -11,9 +11,9 @@ class MenuBar extends Component {
     return (
         <div>
             <div class="navbar">
-                <Link to="/home">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/resume">Resume</Link>
+                <Link to="/home"><span id="dash">-</span><span id="home">Home</span><span id="dash">-</span></Link>
+                <Link to="/about"><span id="dash">-</span><span id="home">About</span><span id="dash">-</span></Link>
+                <Link to="/resume"><span id="dash">-</span><span id="home">Resume</span><span id="dash">-</span></Link>
                 <div className="dropdown">
                     <div className="noselect">Portfolio</div>
                     <div className="dropdown-content">
