@@ -5,15 +5,16 @@ import './App.css';
 import Home from './Home';
 import About from './About';
 import Resume from './Resume';
+import QuickQuote from './Portfolio/QuickQuote';
 
 class MenuBar extends Component {
   render() {
     return (
         <div>
             <div class="navbar">
-                <Link to="/home"><span id="dash">-</span><span id="home">Home</span><span id="dash">-</span></Link>
-                <Link to="/about"><span id="dash">-</span><span id="home">About</span><span id="dash">-</span></Link>
-                <Link to="/resume"><span id="dash">-</span><span id="home">Resume</span><span id="dash">-</span></Link>
+                <Link to="/home">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/resume">Resume</Link>
                 <div className="dropdown">
                     <div className="noselect">Portfolio</div>
                     <div className="dropdown-content">
@@ -28,6 +29,7 @@ class MenuBar extends Component {
             <Route path="/home" exact component={Home} />
             <Route path="/about" exact component={About} />
             <Route path="/resume" exact component={Resume} />
+            <Route path="/project1" exact component={QuickQuote} />
         </div>
     );
   }
