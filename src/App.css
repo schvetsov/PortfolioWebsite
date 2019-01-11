@@ -35,36 +35,109 @@ a {
 }
 
 .background {
-  background-image: url("main4.JPG");
+  /* background-image: url("main4.JPG"); */
+  /* height: 60vh; */
+  /* width: 80vw; */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgb(54, 54, 54);
   height: 100vh;
+  font-family: Nauman-Reg, Helvetica, sans-serif;
+  
+}
+
+.background-image {
+  background-image: url("main4.JPG");
+  /* background-image: url("berlinskyline.jpg"); */
+  /* background-image: url("berlinstreet.jpg"); */
+  /* background-image: url("seattlestadium.jpg"); */
+
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: Nauman-Reg, Helvetica, sans-serif;
+
+  height: 50vh;
+}
+
+
+.fadein img {
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position:absolute;
+  height: 50vh;
+  top:100;
+  -webkit-animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 12s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes fade {
+  0% {opacity: 0;}
+  20% {opacity: 1;}
+  33% {opacity: 1;}
+  53% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+#f1 {
+  background-color: lightblue;
+}
+#f2 {
+  -webkit-animation-delay: -10s;
+  background-color: yellow;
+}
+#f3 {
+  -webkit-animation-delay: -10s;
+  background-color: lightgreen;
+}
+
+
+.main-content {
+  height: 1000px;
+  background-color: rgb(54, 54, 54);
 }
 
 .title {
-  background-color: rgba(59, 59, 59, 0);
+  background-color: rgba(218, 218, 218, 0);
   /* background-color: rgba(28, 51, 54, 0.9); */
   /* border: 1px solid white; */
   /* color: rgb(221, 221, 221); */
   color: rgb(75, 75, 75);
   font-family: Nauman-Med, Helvetica, sans-serif;
+  /* height: 200px; */
   /* border: 1px solid black; */
+  padding: 60px;
 }
 
   .title-container {
     /* border-right: 1px solid white;
     border-left: 1px solid white; */
     /* padding: 10px; */
-    width: 95%;
+    /* width: 95%; */
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     /* border: 1px solid black; */
+    background-color: rgb(54, 54, 54);
+    color: white;
     /* box-shadow: 20px -10px 25px rgb(42, 42, 42), -20px -10px 25px rgb(42, 42, 42); */
   }
 
@@ -86,7 +159,7 @@ a {
       .name {
         font-size: 32px;
         display: block;
-        text-shadow: 0px 0px 2px rgb(206, 206, 206);
+        /* text-shadow: 0px 0px 2px rgb(206, 206, 206); */
         /* border: 1px solid black; */
         /* text-shadow: 2px 2px 5px black; */
       }
@@ -122,7 +195,7 @@ a {
 .navbar {
   display: flex;
   /* background-color: rgb(209, 209, 209); */
-  /* background-color: rgba(128, 128, 128, 0.1); */
+  background-color: rgba(128, 128, 128, 0.3);
   /* background-image: linear-gradient(to bottom right, 
   rgba(255, 187, 0, 0.1), 
   rgba(181, 94, 201, 0.1)); */
@@ -232,8 +305,11 @@ a {
 
 .container {
   display: flex;
+  padding-top: 300px;
+  color: white;
+  /* background-color: black; */
   /* padding: 20px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
   .sub-container {
@@ -243,7 +319,7 @@ a {
     height: 70%;
     width: 640px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* border-right: 1px solid black;
     border-left: 1px solid black;
     border-bottom: 1px solid black; */
@@ -270,6 +346,12 @@ a {
       /* text-shadow: 1px 1px 1px black; */
       /* box-shadow: 5px 5px 10px rgb(42, 42, 42), inset 0 0 40px #4e4e4e; */
       border: 1px solid black;
+    }
+
+    .about-container {
+      color: white;
+      background-color: rgb(54, 54, 54);
+      padding: 300px;
     }
 
     .resume-container {

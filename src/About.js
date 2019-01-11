@@ -7,23 +7,27 @@ class About extends Component {
   render() {
     return (
       // <Scrollbars style={{ width: 700, height: 540, margin: 'auto' }}>
-        <div className="container">
+        <div>
         
-          <div className="sub-container">
-            <div className="sub-sub-container">
+          <div className='container'>
+
+            </div>
+          <div className="about-container">
               <span className="page-title">About</span>
               <p>
-                  I believe the first step to accomplishing anything is to set a clear goal, on September 18, 2018, 
-                  I set the goal of becoming a software developer. I began on that day to immerse myself in HTML, CSS and Javascript, 
-                  and one week later I began working with React. On November 5, 2018, I showed my boss the mobile app 
-                  that I was working on, and from that time on I began working on it at the office. I have 2 years of experience 
-                  writing rating application in Microsoft's VBA, which is why I am sure that this is the path for me. 
-                  I made this site to show off the design skills I have learned.
+              I am an aspiring software developer with 2 years of experience with Microsoft's 
+              VBA in an insurance environment. During those years I have used VBA to create 
+              rating applications, automate underwriting tasks, and scrape information off the 
+              internet. On September 18, 2018, I realized I really enjoy writing code, and want 
+              to do it full time. So during my own time, I began to create a mobile version of 
+              an application we were already using, called the QuickQuote, using React Native 
+              and Node. On November 5, 2018, I showed my boss what I have been working on, and 
+              on that day I began working on it in the office. You can view all the details of 
+              this app in the Portfolio section of this website. I hope to use the skills I have 
+              gained thus far to create more beautiful applications.
               </p>
-            </div>
           </div>
-          
-        </div>
+          </div>
         // </Scrollbars>
         );
     }

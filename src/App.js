@@ -54,7 +54,9 @@ class App extends Component {
           </div>
         </div>
         <div className="module-border-wrap">
-          <MenuBar />
+        <div className="background-image">
+        <MenuBar />
+        </div>
         </div>
         <div className="footer">
           Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons (L->R): React, Node, Redux
