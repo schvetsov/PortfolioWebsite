@@ -10,10 +10,11 @@ import QuickQuote from './Portfolio/QuickQuote';
 class MenuBar extends Component {
   render() {
     return (
-        <div>
-            <div class="navbar">
-                <Link to="/home">Home</Link>
+        <div className="navbar-sticky">
+            <div className="navbar">
+                <Link to ="/">Home</Link>
                 <Link to="/about">About</Link>
+                {/* <a href="#scroll-down">About</a> */}
                 <Link to="/resume">Resume</Link>
                 <div className="dropdown">
                     <div className="noselect">Portfolio</div>
@@ -26,7 +27,7 @@ class MenuBar extends Component {
                     </div>
                 </div>
             </div>
-            <Route path="/home" exact component={Home} />
+            <Route exact path="/" exact component={Home} />
             <Route path="/about" exact component={About} />
             <Route path="/resume" exact component={Resume} />
             <Route path="/project1" exact component={QuickQuote} />
