@@ -9,6 +9,7 @@ import react from './logo.png';
 import axios from './axios.png';
 import nativebase from './nativebase.png';
 import node from './output3.png';
+import redux from './output4.png';
 import express from './express.png';
 import mlab from './mlab.png';
 import mongoose from './mongoose.png';
@@ -17,10 +18,19 @@ import nodemailer from './nodemailer.png';
 import heroku from './heroku.png';
 import git from './git.png'
 import github from './output6.png'
+import html from './html.png';
+import css from './css.png';
+import javascript from './Javascript.png';
+import vba from './vba.png';
+import sql from './sql.png';
+import java from './java.png';
+
 
 class About extends Component {
   render() {
     return (
+        <div>
+          <div className="black-bar"></div>
         <div className="main-container" id="scroll-down">
         <div className="sub-container">
             <div className="section-title">
@@ -59,7 +69,7 @@ class About extends Component {
           <div className="sub-container">
             <img id="medmal-logo" src={medmal}/>
             <div id="bio">
-              I spent the entire 3 years of my professional career at one place, MedMal Direct Insurance Company. 
+              I spent the entire 3 years of my professional career at one place; MedMal Direct Insurance Company. 
               I had the opportunity to do work in various departments, but most important was the coding 
               skills that I learned. For the past 2 years, I have been using Microsoft's Visual Basic for Applications (VBA) 
               to build rating applications, automate underwriting tasks, and scrape data from the internet. 
@@ -89,32 +99,38 @@ class About extends Component {
             </div>
           </div>
           <div className="sub-container">
+            <div className="skills-list">
             <div className="sub-sub-container">
-            <img src={react} height='20px'/> React <br />
-              React Native <br/>
-              NodeJS <br/>
-              Redux <br/>
-              HTML <br/>
-              CSS <br/>
-              Javascript <br/>
-              VBA <br/>
-              SQL <br/>
-              Java <br/>
+            <img src={react} height='12px'/> React <br />
+            <img src={node} height='12px'/>NodeJS <br/>
+            <img src={redux} height='12px'/>Redux <br/>
+            <img src={html} height='12px'/> HTML <br/>
+            <img src={css} height='12px'/>  CSS <br/>
+            <img src={javascript} height='12px'/>  Javascript <br/>
+            <img src={vba} height='12px'/>  VBA <br/>
+            <img src={sql} height='12px'/>  SQL <br/>
+              <img src={java} height='12px'/>  Java <br/>
+              Git
             </div>
             <div className="sub-sub-container">
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
-            <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+              <i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i> <br/>
+
             </div>
           </div>
-
+          </div>
+        </div>
+        <div className="black-bar"></div>
+        <div className="footer">
+          Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+        </div>
         </div>
       );
     }

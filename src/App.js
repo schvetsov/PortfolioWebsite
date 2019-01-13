@@ -94,9 +94,6 @@ class App extends Component {
             <Route path="/resume" exact component={Resume} />
             <Route path="/project1" exact component={QuickQuote} />
         </div>
-        <div className="footer">
-          Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
-        </div>
 
 </div>
 

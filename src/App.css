@@ -39,12 +39,15 @@ a {
 }
 
 .background {
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(44, 44, 44);
+  
   background-image: linear-gradient(to bottom right, 
-  rgba(105, 105, 105, 0.8), 
-  rgba(27, 27, 27, 0.8));
+  rgba(105, 105, 105, 0.4), 
+  rgba(27, 27, 27, 0.4));
   /* height: 2400px; */
   font-family: Nauman-Reg, Helvetica, sans-serif;
+  /* position: relative;
+  z-index: -2; */
 }
 
 /* HEADER */
@@ -52,6 +55,7 @@ a {
 .title {
   background-color: rgba(218, 218, 218, 0);
   padding: 40px;
+  /* height: 200px; */
     background-image: linear-gradient(to bottom right, 
   rgba(105, 105, 105, 0.4), 
   rgba(27, 27, 27, 0.4));
@@ -119,6 +123,7 @@ a {
       .tooltip {
         position: relative;
         display: inline-block;
+        font-size: 14px;
         /* border-bottom: 1px dotted black; */
       }
       
@@ -159,7 +164,7 @@ a {
   position: sticky;
   top: 0;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(214, 214, 214);
   /* background-image: linear-gradient(to bottom right, 
   rgba(255, 187, 0, 0.1), 
   rgba(181, 94, 201, 0.1)); */
@@ -174,11 +179,12 @@ a {
       rgba(255, 0, 255, 0.4)
     ) 1 stretch; */
   /* border: 1px solid black; */
+  box-shadow: 20px -10px 25px rgb(42, 42, 42), -20px -10px 25px rgb(42, 42, 42);
 }
 
   .navbar a {
     color: black;
-    padding: 12px 20px;
+    padding: 8px 20px;
     text-decoration: none;
     text-align: center;
     width: 120px;
@@ -192,7 +198,7 @@ a {
     }
 
       .navbar a:hover{
-        background-color: rgba(15, 189, 88, 0.2); 
+        background-color: rgba(15, 189, 88, 0.2);
         width: 120px;
       }
 
@@ -203,30 +209,33 @@ a {
         color: white;
         text-decoration: none;
         padding: 10px 25px;
+        z-index: 20;
       }
 
       .dropdown:hover .dropbtn {
           background-color: #444444;
+          z-index: 20;
           /* cursor: default; */
       }
 
         .dropdown {
             display: inline-block;
             color: black;
-            padding: 12px 20px;
+            padding: 8px 20px;
             text-decoration: none;
             text-align: center;
             width: 120px;
+            z-index: 20;
         }
 
           .dropdown-content {
               display: none;
               position: absolute;
-              top: 39px;
+              top: 30px;
               background-color: #f9f9f9;
               width: auto;
               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-              z-index: 1;
+              z-index: 20;
           }
 
             .dropdown-content a {
@@ -238,6 +247,7 @@ a {
                 text-align: left;
                 font-size: 12px;
                 width: auto;
+                z-index: 20;
             }
 
             .dropdown-content a:hover {
@@ -310,30 +320,52 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 74vh;
-  position: relative;
+  height: 69vh;
+  /* position: relative; */
+  /* z-index: -1; */
   /* bottom: 39px; */
 }
 
 .main-container {
-  /* background-color: rgb(54, 54, 54); */
+  background-color: rgb(211, 211, 211);
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 800px;
   margin: auto;
-  padding: 100px 0px;
+  padding: 0px 0px;
   font-size: 14px;
   /* border: 1px solid black; */
+  box-shadow: 5px 10px 18px #161616;
+}
+
+.black-bar {
+  height: 40px;
+  /* background-color: rgb(40, 40, 40); */
+    /* background-image: linear-gradient(to bottom right, 
+  rgba(155, 124, 165, 0.4), 
+  rgba(27, 27, 27, 0.4)); */
+  
 }
 
   .sub-container {
+    padding: 20px;
     display: flex;
     /* border: 1px solid black; */
   }
 
     .sub-sub-container {
-      margin: auto;
+      background-color: rgb(41, 41, 41);
+      color: white;
+      padding: 20px;
+      /* width: 200px; */
+      /* margin: auto; */
       /* border: 1px solid black; */
+    }
+
+    .skills-list {
+      display: flex;
+      margin: auto;
+      border: 1px solid black;
     }
 
   .section-title {
@@ -342,8 +374,10 @@ a {
     text-align: center;
     width: 100%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.6);
-    color: black;
+    background-image: linear-gradient(to bottom right, 
+    rgb(75, 75, 75), 
+    rgb(63, 63, 63));
+    color: rgb(255, 255, 255);
     /* border: 1px solid black; */
   }
 
@@ -378,18 +412,34 @@ a {
 
 .fa-star {
   font-size: 12px;
+  color: yellow;
 }
 
 
 .footer {
   position: relative;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: white;
-  padding: 60px;
+  padding: 20px;
   /* margin-top: -180px; */
   /* negative value of footer height */
   /* height: 180px; */
+  clear: both;
+  background-color: rgb(27, 27, 27);
+  font-family: Nauman-Reg, Helvetica, sans-serif;
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
   clear: both;
   background-color: rgb(27, 27, 27);
   font-family: Nauman-Reg, Helvetica, sans-serif;
