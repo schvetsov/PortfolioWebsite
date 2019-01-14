@@ -61,6 +61,7 @@ a {
   rgba(105, 105, 105, 0.4), 
   rgba(27, 27, 27, 0.4));
   border: 1px solid black;
+  
 }
 
   .title-container {
@@ -78,6 +79,7 @@ a {
     /* background-color: rgb(54, 54, 54); */
     color: white;
     /* border: 1px solid black; */
+    /* z-index: -1; */
   }
 
     .title-sub-container {
@@ -124,6 +126,7 @@ a {
       .title-sub-container > a:hover {
         font-size: 24px;
         color: rgb(255, 255, 255);
+        /* z-index: -1; */
         /* border: 1px solid black; */
       }
 
@@ -131,6 +134,7 @@ a {
         position: relative;
         display: inline-block;
         font-size: 14px;
+        /* z-index: 20; */
         /* border-bottom: 1px dotted black; */
       }
       
@@ -143,7 +147,7 @@ a {
         border-radius: 6px;
         padding: 5px 0;
         position: absolute;
-        z-index: 1;
+        /* z-index: 20; */
         top: 150%;
         left: 50%;
         margin-left: -60px;
@@ -158,10 +162,12 @@ a {
         border-width: 5px;
         border-style: solid;
         border-color: transparent transparent black transparent;
+        /* z-index: 20; */
       }
       
       .tooltip:hover .tooltiptext {
         visibility: visible;
+        /* z-index: 20; */
       }
 
 /* MENU */
@@ -171,6 +177,7 @@ a {
   position: sticky;
   top: 0;
   display: flex;
+  /* z-index: -1; */
   background-color: rgb(214, 214, 214);
   /* background-image: linear-gradient(to bottom right, 
   rgba(255, 187, 0, 0.1), 
@@ -357,23 +364,22 @@ a {
   .sub-container {
     padding: 20px;
     display: flex;
-    /* border: 1px solid black; */
+    /* border: 1px solid blue; */
   }
 
     .sub-sub-container {
-      background-color: rgb(41, 41, 41);
       color: white;
       padding: 20px;
       /* width: 200px; */
       /* margin: auto; */
-      /* border: 1px solid black; */
+      /* border: 1px solid blue; */
     }
 
-    .skills-list {
-      display: flex;
-      margin: auto;
-      border: 1px solid black;
-    }
+      .pictureText {
+        padding: 0px 80px;
+        display: flex;
+        /* border: 1px solid blue; */
+      }
 
   .section-title {
     font-size: 14px;
@@ -389,39 +395,114 @@ a {
   }
 
   #headshot {
-    height: 200px;
+    height: 150px;
     width: auto;
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     /* border: 1px solid black; */
   }
 
-  #bio {
+  .bio {
+    display: inline-block;
     text-indent: 50px;
-    padding: 20px;
+    padding: 0px 80px;
+    padding-bottom: 20px;
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+  }
+
+  .bio2 {
+    display: inline-block;
+    /* text-indent: 50px; */
+    padding-left: 20px;
+    /* padding: 20px; */
     /* border: 1px solid black; */
   }
 
   #medmal-logo {
-    height: 100px;
+    height: 83px;
     width: auto;
-    padding: 40px 20px;
+    padding: 20px 0px;
     /* border: 1px solid black; */
   }
 
   #fsu-logo {
-    height: 200px;
+    height: 154px;
     width: auto;
-    padding: 20px 20px;
+    /* padding: 0px 0px; */
     /* border: 1px solid black; */
   }
 
+    .skillsTable {
+      width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: rgb(59, 59, 59);
+      background-image: linear-gradient(to bottom right, 
+      rgba(73, 73, 73, 0.4), 
+      rgba(0, 0, 0, 0.4));
+    }
 
+      .columnone {
+        width: 20px;
+        /* border: 1px solid black; */
+        padding-left: 15px;
+      }
 
-.fa-star {
+      .columnone img {
+        width: 20px;
+      }
+
+      .columntwo {
+        width: 80px;
+        color: white;
+        font-size: 14px;
+        /* border: 1px solid black; */
+      }
+
+      .columnthree {
+        width: 40px;
+        /* border: 1px solid black; */
+      }
+
+      .fa-star {
+        font-size: 10px;
+        color: yellow;
+      }
+
+/*QUICKQUOTE*/
+
+.stackTable {
+  /* width: 640px; */
+  margin: auto;
+  padding: 20px;
   font-size: 12px;
-  color: yellow;
+  color: white;
+  background-color: rgb(59, 59, 59);
+  background-image: linear-gradient(to bottom right, 
+  rgba(73, 73, 73, 0.4), 
+  rgba(0, 0, 0, 0.4));
 }
 
+  .table-container {
+    padding-bottom: 40px;
+  }
+
+    .colone {
+      width: 80px;
+      /* border: 1px solid black; */
+      padding-left: 15px;
+    }
+
+    .coltwo {
+      width: 100px;
+      color: white;
+      /* border: 1px solid black; */
+    }
+
+    .colthree {
+      width: 400px;
+      /* border: 1px solid black; */
+    }
 
 .footer {
   position: relative;

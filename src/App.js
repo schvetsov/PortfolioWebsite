@@ -17,10 +17,13 @@ import fsu from './fsu.png';
 import Home from './Home';
 import About from './About';
 import Resume from './Resume';
+import ImportAlg from './Portfolio/ImportAlg';
 import QuickQuote from './Portfolio/QuickQuote';
+import RatingEng from './Portfolio/RatingEng';
+import TVMCalc from './Portfolio/TVMCalc';
+import WebScraper from './Portfolio/WebScraper';
 
 class App extends Component {
-
 
   render() {
     return (
@@ -93,6 +96,10 @@ class App extends Component {
             <Route path="/about" exact component={About} />
             <Route path="/resume" exact component={Resume} />
             <Route path="/project1" exact component={QuickQuote} />
+            <Route path="/project2" exact component={ImportAlg} />
+            <Route path="/project3" exact component={RatingEng} />
+            <Route path="/project4" exact component={WebScraper} />
+            <Route path="/project5" exact component={TVMCalc} />
         </div>
 
 </div>
