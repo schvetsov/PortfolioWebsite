@@ -13,6 +13,13 @@ class RatingEng extends Component {
                         Rating Engine
                     </div>
                 </div>
+                <div className="bio">
+                    The rating engine is a macro I wrote that goes row by row through a database, 
+                    pulls information, and creates a rating with a final premium, and a quote form 
+                    with a binding quote for the insured. The Excel file with the rating and the Word 
+                    document with the form is saved in a destination folder. When this macro was ran 
+                    it managed to process 3000 insureds per hour.
+                </div>
             </div>
             <div className="black-bar">
             </div>
