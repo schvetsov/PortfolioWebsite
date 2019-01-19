@@ -100,7 +100,7 @@ a {
     }
 
       .name {
-        font-size: 32px;
+        font-size: 36px;
         display: block;
         /* border: 1px solid black; */
       }
@@ -516,6 +516,34 @@ a {
       padding: 2px 0px 2px 0px;
       /* border: 1px solid black; */
     }
+
+      .zoom {
+        height: 200px;
+        padding: 20px;
+        transition: transform .2s;
+        /* width: 200px;
+        height: 200px;
+        margin: 0 auto; */
+      }
+      
+      .zoom:hover {
+        -ms-transform: scale(3); /* IE 9 */
+        -webkit-transform: scale(3); /* Safari 3-8 */
+        transform: scale(3); 
+      }
+
+      .full-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        padding: 20px 0px;
+        /* border: 1px solid black; */
+      }
+
+      .bio3 {
+        padding: 20px 20px;
+      }
 
 /*CODE*/
 

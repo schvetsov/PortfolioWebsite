@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
+import pic1 from '../QQScreenShots/11.png';
+import pic2 from '../QQScreenShots/12.png';
+import pic3 from '../QQScreenShots/13.png';
+import pic4 from '../QQScreenShots/14.png';
 
 class WebScraper extends Component {
   render() {
@@ -14,15 +18,25 @@ class WebScraper extends Component {
                     </div>
                 </div>
                 <div className="bio">
-                    This is a web scraper I created when I was at MedMal. It's purpose 
-                    is to search and retrieve NPI's (National Provider Identifier) which are a 10 digit 
-                    number assigned to every physician. The webscraper accomplishes this by establishing 
-                    a connection with the online database using an XMLHTTP request, and walking through the 
-                    document object model to find the NPI, storing it in a variable, and pasting it in the 
-                    spreadsheet. For this to work, the XML and HTTP libraries have to be enabled in VBA. 
-                    The searches are done by making an addendum to the URL, to include First Name, Last Name, 
-                    and State.
+                    During my time at MedMal Direct, I created several web scrapers to automate web searches. 
+                    This is one of them. This particular web scraper automates searches done on this website: 
                 </div>
+                <img className="full-image" src={pic1} />
+                <div className="bio">
+                    The first step the macro takes is to manipulate the url of the website.
+                </div>
+                <img className="full-image" src={pic2} />
+                <div className="bio">
+                    Instead of walking through the DOM (document object model) of the website to fill in the form elements, we can just 
+                    create a new url string for every search. This will save an immense amount of time and we will 
+                    be able to perform multiple searches per second this way.
+                </div>
+                <img className="full-image" src={pic3} />
+                <div className="bio">
+                    The next step the program takes is to establish a connection to the webpage's server. This is accomplished 
+                    by enabling the XML and HTTP libraries in Excel VBA, and performing an xmlHTTP get request.
+                </div>
+                <img className="full-image" src={pic4} />
             </div>
             <div className="black-bar">
             </div>

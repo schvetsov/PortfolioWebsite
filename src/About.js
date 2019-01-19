@@ -105,50 +105,50 @@ class About extends Component {
                   <tr>
                     <td className="columnone"><img src={react}/></td>
                     <td className="columntwo">React</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={vba}/></td>
                     <td className="columntwo">VBA</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                   <tr>
                     <td className="columnone"><img src={node}/></td>
                     <td className="columntwo">NodeJS</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={sql}/></td>
                     <td className="columntwo">SQL</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                   <tr>
                     <td className="columnone"><img src={redux}/></td>
                     <td className="columntwo">Redux</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={java}/></td>
                     <td className="columntwo">Java</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                   <tr>
                     <td className="columnone"><img src={html}/></td>
                     <td className="columntwo">HTML</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={linux}/></td>
                     <td className="columntwo">Linux</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                   <tr>
                     <td className="columnone"><img src={css}/></td>
                     <td className="columntwo">CSS</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={git}/></td>
                     <td className="columntwo">Git</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                   <tr>
                     <td className="columnone"><img src={javascript}/></td>
                     <td className="columntwo">Javascript</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                     <td className="columnone"><img src={github}/></td>
                     <td className="columntwo">Github</td>
-                    <td className="columnthree"><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i><i className="fa fa-star"></i></td>
+                    <td className="columnthree"></td>
                   </tr>
                 </table>
               </div>

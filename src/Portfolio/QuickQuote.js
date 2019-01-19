@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
+import pic1 from '../QQScreenShots/1.png';
+import pic2 from '../QQScreenShots/2.png';
+import pic5 from '../QQScreenShots/5.png';
+import pic6 from '../QQScreenShots/6.png';
+import pic7 from '../QQScreenShots/7.png';
+import pic8 from '../QQScreenShots/8.png';
+import pic9 from '../QQScreenShots/9.png';
+import pic10 from '../QQScreenShots/10.png';
 
 class QuickQuote extends Component {
   render() {
@@ -16,7 +24,7 @@ class QuickQuote extends Component {
                 <div className="bio">
                     The QuickQuote is a mobile rating application that I developed for MedMal Direct Insurance Company. 
                     The idea is for our sales people to be able to produce quotes for low risk business, and have those quote forms 
-                    emailed to themselves, all from their smartphone. It was created with React Native in the front end, and a Node back end.
+                    emailed to themselves, all from their mobile device. It was created with React Native in the front end, and a Node back end.
                     I also used many additional API's and packages, the full list:
                 </div>
                 <div className="table-container">
@@ -104,27 +112,94 @@ class QuickQuote extends Component {
                         </tr>
                     </table>
                 </div>
-                <div className="bio">
-                    The user interface of this app begins with the login screen, and renders to a dynamic 
-                    form when the user is authenticated. When the user selects certain items from the drop down 
-                    lists, the form re renders based on the item selected. For example, when the Practice State of 
-                    Florida is selected, the county dropdown renders with the list of counties for Florida. When 
-                    the Number of Physicians selected is 2, 2 components with Physician information are re rendered. 
-                    Once the user has provided the last necessary input, a premium is able to be calculated and appears 
-                    instantly, no 'Calculate' buttons required. To calculate the premiums, relativity tables are used. 
-                    For example, Florida has a base rate of 1000 and the specialty Neurosurgeon has a relativity value 
-                    of 5. We multiply these values together, and we get 5000 as the premium for a Neurosurgeon praciticing in 
-                    Florida. This is of course an extremely simplified example, the real algorithm 
-                    is (base rate)*(county)*(specialty)*(limits)*(1-discounts). Once the premium is calculated, the user 
-                    can click the button "Send email". A popup emerges saying "send email to (users' email) ?" When the user 
-                    click "Yes", all the information from the front end is sent to the back end with a post request, and a PDF 
-                    is generated with PDFMake. Once the PDF is generated, it is sent as an attachment to the users' email. 
-                    The user has just circumvented the entire underwriting department, and produced a binding quote, all 
-                    from their mobile device. Now that is amazing.
-                    Database: When the app is loaded, about 20 tables are imported from MongoDB into the backend. These tables 
-                    contain all the information that are required to calculate the premium. When the user is authenticated, 
-                    a componentDidMount lifecycle method sends a get request to the backend to retrieve all of these tables. 
-                    They are then passed down to the grandchildren component where the calculations take place.
+                <div className="sub-container">
+                    <div className="section-title">
+                        Login Screen
+                    </div>
+                </div>
+                <div className="pictureText">
+                    <div className="bio3">
+                    When the app is launched, it takes the user to a login screen. If you look closely, you will notice there is 
+                    no 'register' link. I created this by design, so the company has full control over who is able to access and use 
+                    the app. Right now a few very important things have happened. The node js backend has established a connection with 
+                    the MongoDB server, and has imported the relativity tables that are used for the premium calculations. These tables will 
+                    be stored in the backend for now. When the user enters their login information, their password is hashed and salted with 
+                    bcrypt, and the hash is matched to a document contained in MongoDB. If a match is found, a token is sent back and the main 
+                    screen is rendered.
+                    </div>
+                    <img className="zoom" src={pic1} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        Main Screen
+                    </div>
+                </div>
+                <div className="pictureText">
+                    <div className="bio3">
+                    This is the main screen. Once the component mounts, a componentDidMount lifecycle method creates a get request to the backend, 
+                    and retrieves all the relativity tables that were imported from MongoDB. These tables are then stored in the components' state, 
+                    and will be passed down to the children and grandchildren components for premium calculations. This app is basically a dynamic form 
+                    that changes and expands as the user makes selections from the dropdown.
+                    </div>
+                    <img className="zoom" src={pic2} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        Form Expansion
+                    </div>
+                </div>
+                <div className="pictureText">
+                    <div className="bio3">
+                    When the user selects "2" from the "Number of Physicians" dropdown, it triggers a rerender which adds "Physician 1" and "Physician 2" 
+                    to the bottom of the form. The user is then able to fill in information about that doctor which is needed to calculate 
+                    the premium. If the user selects "1", another rerender will be triggered which will remove the "Physician 2" grandchild from 
+                    the form.
+                    </div>
+                    <img className="zoom" src={pic7} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        Premium Calculation
+                    </div>
+                </div>
+                <div className="pictureText">
+                    <div className="bio3">
+                    Once the last necessary field is filled in, the Physician's premium will be calculated automatically. No button clicking is 
+                    necessary. If a field is changed, the premium will recompute automatically. If a field is selected back to blank, a premium 
+                    of 0 will show. The sum of all the physician's premium is calculated instantly as well. I designed this form this way so there 
+                    is virtually no possibility of the user making an error.
+                    </div>
+                    <img className="zoom" src={pic6} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        PDF Generation and Email
+                    </div>
+                </div>
+                <div className="pictureText">
+                    <div className="bio3">
+                    When all the form inputs are complete, the user will be able to click the "Send Email" button at the bottom to generate the PDF 
+                    document and have it sent to their work email. Once the button is clicked, an alert pops up to verify that that is where the email 
+                    will be sent to. Once it is clicked, the PDF form is generated with PDFMake, and it is sent with a transporter account I created in Gmail 
+                    to the destination email address.
+                    </div>
+                    <img className="zoom" src={pic8} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        Email in Inbox
+                    </div>
+                </div>
+                <div>
+                    <img className="full-image" src={pic9} />
+                </div>
+                <div className="sub-container">
+                    <div className="section-title">
+                        The Final Product
+                    </div>
+                </div>
+                <div>
+                    <img className="full-image" src={pic10} />
                 </div>
             </div>
             <div className="black-bar">
