@@ -5,6 +5,10 @@ import pic1 from '../QQScreenShots/11.png';
 import pic2 from '../QQScreenShots/12.png';
 import pic3 from '../QQScreenShots/13.png';
 import pic4 from '../QQScreenShots/14.png';
+import pic5 from '../QQScreenShots/15.png';
+import pic6 from '../QQScreenShots/16.png';
+import pic7 from '../QQScreenShots/17.png';
+import pic8 from '../QQScreenShots/18.png';
 
 class WebScraper extends Component {
   render() {
@@ -37,6 +41,29 @@ class WebScraper extends Component {
                     by enabling the XML and HTTP libraries in Excel VBA, and performing an xmlHTTP get request.
                 </div>
                 <img className="full-image" src={pic4} />
+                <div className="bio">
+                    Once the connection is established, we can walk through the webpage's HTML elements, and find 
+                    the one that contains the NPI. But first, since we want the accuracy to be 100%, we have to exclude 
+                    the searches that produce 0 NPI's and more than 1 NPI.
+                </div>
+                <div className="bio">
+                    We don't want this:
+                </div>
+                <img className="full-image" src={pic7} />
+                <div className="bio">
+                    Or this:
+                </div>
+                <img className="full-image" src={pic8} />
+                <div className="bio">
+                    This is how we skip these entries:
+                </div>
+                <img className="full-image" src={pic5} />
+                <div className="bio">
+                    If there is only 1 NPI in the search results, it is the correct one and we pull it out of the 
+                    webpage, and store it in a cell on the spreadsheet. The program then goes down a row on the spreadsheet 
+                    to the next name, and does it until there are no more entries left.
+                </div>
+                <img className="full-image" src={pic6} />
             </div>
             <div className="black-bar">
             </div>
