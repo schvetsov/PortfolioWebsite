@@ -22,6 +22,8 @@ import QuickQuote from './Portfolio/QuickQuote';
 import RatingEng from './Portfolio/RatingEng';
 import TVMCalc from './Portfolio/TVMCalc';
 import WebScraper from './Portfolio/WebScraper';
+import WebScraper2 from './Portfolio/WebScraper2';
+import Portfolio from './Portfolio/Portfolio';
 
 class App extends Component {
 
@@ -85,10 +87,12 @@ class App extends Component {
                     <div className="noselect">Portfolio</div>
                     <div className="dropdown-content">
                         <Link to="/project1">QuickQuote Mobile</Link>
+                        <Link to="/project7">Portfolio Website</Link>
                         <Link to="/project2">Import Algorithm</Link>
                         <Link to="/project3">Rating Engine</Link>
-                        <Link to="/project4">Web Scraper</Link>
-                        <Link to="/project5">Time Value of Money Calculator</Link>
+                        <Link to="/project4">Web Scraper 1</Link>
+                        <Link to="/project5">Web Scraper 2</Link>
+                        <Link to="/project6">Time Value of Money Calculator</Link>
                     </div>
                 </div>
             </div>
@@ -99,7 +103,9 @@ class App extends Component {
             <Route path="/project2" exact component={ImportAlg} />
             <Route path="/project3" exact component={RatingEng} />
             <Route path="/project4" exact component={WebScraper} />
-            <Route path="/project5" exact component={TVMCalc} />
+            <Route path="/project5" exact component={WebScraper2} />
+            <Route path="/project6" exact component={TVMCalc} />
+            <Route path="/project7" exact component={Portfolio} />
         </div>
 
 </div>

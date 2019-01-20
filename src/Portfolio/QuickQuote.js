@@ -24,7 +24,7 @@ class QuickQuote extends Component {
                 <div className="bio">
                     The QuickQuote is a mobile rating application that I developed for MedMal Direct Insurance Company. 
                     The idea is for our sales people to be able to produce quotes for low risk business, and have those quote forms 
-                    emailed to themselves, all from their mobile device. It was created with React Native in the front end, and a Node back end.
+                    emailed to themselves, all from their mobile device. The Github repository can be viewed here: <a target="_blank" href="https://github.com/schvetsov/QuickQuoteMobile">https://github.com/schvetsov/QuickQuoteMobile</a> It was created with React Native in the front end, and a Node back end.
                     I also used many additional API's and packages, the full list:
                 </div>
                 <div className="table-container">
