@@ -9,22 +9,24 @@ import pic5 from '../QQScreenShots/15.png';
 import pic6 from '../QQScreenShots/16.png';
 import pic7 from '../QQScreenShots/17.png';
 import pic8 from '../QQScreenShots/18.png';
+import ScrollButton from '../ScrollButton';
 
 class WebScraper extends Component {
   render() {
     return (
         <div>
             <div className="black-bar"></div>
+            <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">
-                        Web Scraper
+                        Web Scraper<br/><br/>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper">https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper</a>
                     </div>
                 </div>
                 <div className="bio">
                     During my time at MedMal Direct, I created several web scrapers to automate web searches. 
-                    This is one of them. The full code can be viewed on Github: 
-                    <a target="_blank" href="https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper">https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper</a> 
+                    This is one of them.  
                     This particular web scraper automates searches done on this website: 
                 </div>
                 <img className="full-image" src={pic1} />

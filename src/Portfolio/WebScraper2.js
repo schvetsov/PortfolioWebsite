@@ -9,12 +9,14 @@ import pic5 from '../QQScreenShots/15.png';
 import pic6 from '../QQScreenShots/16.png';
 import pic7 from '../QQScreenShots/17.png';
 import pic8 from '../QQScreenShots/18.png';
+import ScrollButton from '../ScrollButton';
 
 class WebScraper2 extends Component {
   render() {
     return (
         <div>
             <div className="black-bar"></div>
+            <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">

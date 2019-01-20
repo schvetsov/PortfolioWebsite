@@ -25,13 +25,16 @@ import vba from './vba.png';
 import sql from './sql.png';
 import java from './java.png';
 import linux from './linux.png';
+import ScrollButton from './ScrollButton';
 
 
 class About extends Component {
+
   render() {
     return (
         <div>
           <div className="black-bar"></div>
+          <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
               <div className="sub-container">
                 <div className="section-title">
@@ -58,8 +61,13 @@ class About extends Component {
               <div className="pictureText">
                 <img id="headshot" src={headshot}/>
                 <div className="bio2">
-                  I bring with me 3 years of experience in the insurance industry, but you can find out all about 
-                  that below. I am extremely passionate about accuracy and optimization. I 
+                  I bring with me 3 years of experience in the insurance industry, with 2 years of that working 
+                  with VBA automating underwriting processes in Microsoft products. I also spent 2 years of that 
+                  building and querying relational databases with Microsoft's Access and SQL Server. In the last 
+                  6 months, I began learning web and mobile development. I spent most of my time working on one huge 
+                  project, which is a mobile iOS app I built for my company with React Native and Node.js. It is called 
+                  the QuickQuote, and the full details are available in the Portfolio section of this website. I am 
+                  excited to apply my experience to larger and more abitious projects, and to continue learning.
                 </div>
               </div>
               <div className="sub-container">

@@ -9,22 +9,26 @@ import pic7 from '../QQScreenShots/7.png';
 import pic8 from '../QQScreenShots/8.png';
 import pic9 from '../QQScreenShots/9.png';
 import pic10 from '../QQScreenShots/10.png';
+import ScrollButton from '../ScrollButton';
 
 class QuickQuote extends Component {
+
   render() {
     return (
         <div>
             <div className="black-bar"></div>
+            <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">
-                        QuickQuote Mobile
+                        QuickQuote Mobile<br /><br/>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/QuickQuoteMobile">https://github.com/schvetsov/QuickQuoteMobile</a>
                     </div>
                 </div>
                 <div className="bio">
                     The QuickQuote is a mobile rating application that I developed for MedMal Direct Insurance Company. 
                     The idea is for our sales people to be able to produce quotes for low risk business, and have those quote forms 
-                    emailed to themselves, all from their mobile device. The Github repository can be viewed here: <a target="_blank" href="https://github.com/schvetsov/QuickQuoteMobile">https://github.com/schvetsov/QuickQuoteMobile</a> It was created with React Native in the front end, and a Node back end.
+                    emailed to themselves, all from their mobile device. It was created with React Native in the front end, and a Node back end.
                     I also used many additional API's and packages, the full list:
                 </div>
                 <div className="table-container">
@@ -127,7 +131,10 @@ class QuickQuote extends Component {
                     bcrypt, and the hash is matched to a document contained in MongoDB. If a match is found, a token is sent back and the main 
                     screen is rendered.
                     </div>
-                    <img className="zoom" src={pic1} />
+                    <div className="hover-caption">
+                        (hover to enlarge)
+                        <img className="zoom" src={pic1} />
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">
@@ -141,7 +148,10 @@ class QuickQuote extends Component {
                     and will be passed down to the children and grandchildren components for premium calculations. This app is basically a dynamic form 
                     that changes and expands as the user makes selections from the dropdown.
                     </div>
-                    <img className="zoom" src={pic2} />
+                    <div className="hover-caption">
+                        (hover to enlarge)
+                        <img className="zoom" src={pic2} />
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">
@@ -155,7 +165,10 @@ class QuickQuote extends Component {
                     the premium. If the user selects "1", another rerender will be triggered which will remove the "Physician 2" grandchild from 
                     the form.
                     </div>
-                    <img className="zoom" src={pic7} />
+                    <div className="hover-caption">
+                        (hover to enlarge)
+                        <img className="zoom" src={pic7} />
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">
@@ -169,7 +182,10 @@ class QuickQuote extends Component {
                     of 0 will show. The sum of all the physician's premium is calculated instantly as well. I designed this form this way so there 
                     is virtually no possibility of the user making an error.
                     </div>
-                    <img className="zoom" src={pic6} />
+                    <div className="hover-caption">
+                        (hover to enlarge)
+                        <img className="zoom" src={pic6} />
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">
@@ -183,7 +199,10 @@ class QuickQuote extends Component {
                     will be sent to. Once it is clicked, the PDF form is generated with PDFMake, and it is sent with a transporter account I created in Gmail 
                     to the destination email address.
                     </div>
-                    <img className="zoom" src={pic8} />
+                    <div className="hover-caption">
+                        (hover to enlarge)
+                        <img className="zoom" src={pic8} />
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">

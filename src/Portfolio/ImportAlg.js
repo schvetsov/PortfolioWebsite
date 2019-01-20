@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
+import ScrollButton from '../ScrollButton';
 
 class ImportAlg extends Component {
+
   render() {
     return (
         <div>
             <div className="black-bar"></div>
+            <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">

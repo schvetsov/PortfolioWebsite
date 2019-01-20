@@ -45,9 +45,20 @@ a {
   rgba(105, 105, 105, 0.4), 
   rgba(27, 27, 27, 0.4));
   /* height: 2400px; */
-  font-family: Nauman-Reg, Helvetica, sans-serif;
+  font-family: Nauman-Med, Helvetica, sans-serif;
   /* position: relative;
   z-index: -2; */
+}
+
+.background2 {
+  background-color: rgb(44, 44, 44);
+  
+  background-image: linear-gradient(to bottom right, 
+  rgba(105, 105, 105, 0.4), 
+  rgba(27, 27, 27, 0.4));
+  height: 70vh;
+  /* height: 2400px; */
+  font-family: Nauman-Med, Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -178,7 +189,7 @@ a {
   top: 0;
   display: flex;
   /* z-index: -1; */
-  background-color: rgb(214, 214, 214);
+  background-color: rgba(235, 235, 235, 0.85);
   /* background-image: linear-gradient(to bottom right, 
   rgba(255, 187, 0, 0.1), 
   rgba(181, 94, 201, 0.1)); */
@@ -198,7 +209,7 @@ a {
 
   .navbar a {
     color: black;
-    padding: 8px 20px;
+    padding: 12px 20px;
     text-decoration: none;
     text-align: center;
     width: 120px;
@@ -235,7 +246,7 @@ a {
         .dropdown {
             display: inline-block;
             color: black;
-            padding: 8px 20px;
+            padding: 12px 20px;
             text-decoration: none;
             text-align: center;
             width: 120px;
@@ -245,7 +256,7 @@ a {
           .dropdown-content {
               display: none;
               position: absolute;
-              top: 30px;
+              top: 39px;
               background-color: #f9f9f9;
               width: auto;
               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -524,6 +535,7 @@ a {
         /* width: 200px;
         height: 200px;
         margin: 0 auto; */
+        /* border: 1px solid black; */
       }
       
       .zoom:hover {
@@ -545,12 +557,39 @@ a {
         padding: 20px 20px;
       }
 
-/*CODE*/
+        .hover-caption {
+          display: block;
+          font-size: 12px;
+          text-align: center;
+        }
 
-.code-box {
-  background-color: rgb(59, 59, 59);
+        .github-link {
+          color: rgb(207, 207, 207);
+          text-decoration: none;
+        }
+
+.scroll-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(102, 100, 100, 0.85);
+  border: none;
   color: white;
-  font-size: 12px;
+  /* padding: 12px 30px; */
+  cursor: pointer;
+  font-size: 14px;
+  /* width: 60px;
+  height: 60px; */
+  z-index: 10;
+  margin: 60px 20px;
+  text-align: center;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(42, 42, 42);
+}
+
+.scroll-top:hover {
+  background-color: rgba(57, 143, 116, 0.85);
 }
 
 .footer {
@@ -564,7 +603,7 @@ a {
   /* height: 180px; */
   clear: both;
   background-color: rgb(27, 27, 27);
-  font-family: Nauman-Reg, Helvetica, sans-serif;
+  font-family: Nauman-Med, Helvetica, sans-serif;
 }
 
 .footer-fixed {
@@ -579,5 +618,5 @@ a {
   padding-bottom: 20px;
   clear: both;
   background-color: rgb(27, 27, 27);
-  font-family: Nauman-Reg, Helvetica, sans-serif;
+  font-family: Nauman-Med, Helvetica, sans-serif;
 }
