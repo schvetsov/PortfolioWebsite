@@ -5,7 +5,7 @@ import '../App.css';
 class Portfolio extends Component {
   render() {
     return (
-        <div className="background2">
+        <div>
             <div className="black-bar"></div>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">

@@ -14,7 +14,7 @@ class TVMCalc extends Component {
 
   render() {
     return (
-        <div>
+        <div className="background">
             <div className="black-bar"></div>
             <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
@@ -67,7 +67,8 @@ class TVMCalc extends Component {
                     </div>
                 </div>
                 <div className="bio">
-                    The following formula is the one that was used to make this calculation.
+                    The following formula is the one that was used to make this calculation. It is called the compound interest 
+                    formula.
                     If we plug all the input values into this formula, we will have 1000*(1+(.1/1))^10(1) which is equal to 
                     2593.74246... which is our answer.
                 </div>

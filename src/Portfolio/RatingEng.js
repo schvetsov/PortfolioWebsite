@@ -7,7 +7,7 @@ class RatingEng extends Component {
 
   render() {
     return (
-        <div>
+        <div className="background">
             <div className="black-bar"></div>
             <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">

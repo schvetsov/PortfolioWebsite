@@ -11,7 +11,7 @@ class Resume extends Component {
   render() {
     return (
       // <Scrollbars style={{ width: '100vw', height: 610 }}>
-          <div>
+          <div className="background">
             <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div style={{ width: "800px", margin: 'auto' }}>
               <embed src={resumefile} width="800px" height="1050px" />

@@ -6,13 +6,13 @@ import MenuBar from './MenuBar';
 class Home extends Component {
   render() {
     return (
-        <div id="f1">
-                    <div className="footer-fixed">
+      <div>
+        <div id="f1"></div>
+        <div className="footer-fixed">
           Credits: Photo: Taken by Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
         </div>
-        </div>
-
-        );
+      </div>
+      );
     }
 }
 
