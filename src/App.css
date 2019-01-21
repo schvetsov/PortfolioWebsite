@@ -358,6 +358,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 69vh;
+  /* opacity: 0; */
   /* opacity: 0.5; */
   /* position: relative; */
   /* z-index: -1; */

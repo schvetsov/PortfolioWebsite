@@ -30,12 +30,12 @@ class App extends Component {
   render() {
     return (
       <div>
-      <div className="background2" id="scroll-up">
-      <head>
-        <title>Font Awesome 5 Icons</title>
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
-      </head>
+        <div className="background" id="scroll-up">
+        <head>
+          <title>Font Awesome 5 Icons</title>
+          <meta name='viewport' content='width=device-width, initial-scale=1'/>
+          <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
+        </head>
         <div className="title">
           <div className="title-container">
             <div className="title-sub-container" id="left-side">
@@ -73,42 +73,40 @@ class App extends Component {
                 <div className="title-sub-container">
                 {/* <span><img src={github} height = '36px'/></span> */}
                 <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>
-                </div>
+              </div>
             </div>
           </div>
         </div>
-
-            <div className="navbar">
-                <Link to ="/">Home</Link>
-                <Link to="/about">About</Link>
-                {/* <a href="#scroll-down">About</a> */}
-                <Link to="/resume">Resume</Link>
-                <div className="dropdown">
-                    <div className="noselect">Portfolio</div>
-                    <div className="dropdown-content">
-                        <Link to="/project1">QuickQuote Mobile</Link>
-                        <Link to="/project7">Portfolio Website</Link>
-                        <Link to="/project2">Import Algorithm</Link>
-                        <Link to="/project3">Rating Engine</Link>
-                        <Link to="/project4">Web Scraper 1</Link>
-                        <Link to="/project5">Web Scraper 2</Link>
-                        <Link to="/project6">Time Value of Money Calculator</Link>
-                    </div>
-                </div>
+        <div className="navbar">
+          <Link to ="/">Home</Link>
+          <Link to="/about">About</Link>
+          {/* <a href="#scroll-down">About</a> */}
+          <Link to="/resume">Resume</Link>
+          <div className="dropdown">
+            <div className="noselect">Portfolio</div>
+              <div className="dropdown-content">
+                <Link to="/project1">QuickQuote Mobile</Link>
+                <Link to="/project7">Portfolio Website</Link>
+                <Link to="/project2">Import Algorithm</Link>
+                <Link to="/project3">Rating Engine</Link>
+                <Link to="/project4">Web Scraper 1</Link>
+                <Link to="/project5">Web Scraper 2</Link>
+                <Link to="/project6">Time Value of Money Calculator</Link>
+              </div>
             </div>
-            <Route exact path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-            <Route path="/resume" exact component={Resume} />
-            <Route path="/project1" exact component={QuickQuote} />
-            <Route path="/project2" exact component={ImportAlg} />
-            <Route path="/project3" exact component={RatingEng} />
-            <Route path="/project4" exact component={WebScraper} />
-            <Route path="/project5" exact component={WebScraper2} />
-            <Route path="/project6" exact component={TVMCalc} />
-            <Route path="/project7" exact component={Portfolio} />
+          </div>
+          <Route exact path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/resume" exact component={Resume} />
+          <Route path="/project1" exact component={QuickQuote} />
+          <Route path="/project2" exact component={ImportAlg} />
+          <Route path="/project3" exact component={RatingEng} />
+          <Route path="/project4" exact component={WebScraper} />
+          <Route path="/project5" exact component={WebScraper2} />
+          <Route path="/project6" exact component={TVMCalc} />
+          <Route path="/project7" exact component={Portfolio} />
         </div>
-
-</div>
+      </div>
 
     );
   }
