@@ -9,6 +9,9 @@ import pic5 from '../QQScreenShots/15.png';
 import pic6 from '../QQScreenShots/16.png';
 import pic7 from '../QQScreenShots/17.png';
 import pic8 from '../QQScreenShots/18.png';
+import pic9 from '../QQScreenShots/27.png';
+import pic10 from '../QQScreenShots/28.png';
+import pic11 from '../QQScreenShots/29.png';
 import ScrollButton from '../ScrollButton';
 
 class WebScraper extends Component {
@@ -21,7 +24,7 @@ class WebScraper extends Component {
                 <div className="sub-container">
                     <div className="section-title">
                         Web Scraper<br/><br/>
-                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper">https://github.com/schvetsov/codebase/blob/master/VBA%20-%20Web%20Scraper</a>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/WebScraper1">https://github.com/schvetsov/WebScraper1</a>
                     </div>
                 </div>
                 <div className="bio">
@@ -80,6 +83,17 @@ class WebScraper extends Component {
                         Results
                     </div>
                 </div>
+                <div className="bio">
+                    When the macro is ran, it reads the information from Columns A, B, C, and D, and stores them in 
+                    variables to do the searches. This is what it looks like before we run it:
+                </div>
+                <img className="full-image" src={pic9} />
+                <div className="bio">
+                    And this is what it looks like after. As you can see, the NPI's are placed in column E. A little more 
+                    than 60% of the NPI's are found, which leaves us with only 18 manual searches, instead of 50. It also 
+                    performs this in 24 seconds, which is about 2 searches per second.
+                </div>
+                <img className="full-image" src={pic10} />
             </div>
             <div className="black-bar">
             </div>

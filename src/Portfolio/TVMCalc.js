@@ -21,7 +21,7 @@ class TVMCalc extends Component {
                 <div className="sub-container">
                     <div className="section-title">
                         Time Value of Money Calculator<br/><br/>
-                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/codebase/blob/master/Java%20-%20TVM%20Calculator">https://github.com/schvetsov/codebase/blob/master/Java%20-%20TVM%20Calculator</a>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/TVMCalc">https://github.com/schvetsov/TVMCalc</a>
                     </div>
                 </div>
                 <div className="bio">

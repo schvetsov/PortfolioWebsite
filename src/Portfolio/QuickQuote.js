@@ -9,6 +9,7 @@ import pic7 from '../QQScreenShots/7.png';
 import pic8 from '../QQScreenShots/8.png';
 import pic9 from '../QQScreenShots/9.png';
 import pic10 from '../QQScreenShots/10.png';
+import pic11 from '../QQScreenShots/26.png';
 import ScrollButton from '../ScrollButton';
 
 class QuickQuote extends Component {
@@ -115,6 +116,15 @@ class QuickQuote extends Component {
                             <td><br /></td>
                         </tr>
                     </table>
+                </div>
+                <div className="bio">
+                    The app is modeled with children and grandchildren components, and the grandchildren lift up the state using 
+                    callbacks all the way back out to the parent component. The IndivDocs and IndivAllieds are reusable components, 
+                    that can be used a maximum of 3 times each. The children components, Doctors and Allieds, map and render an array 
+                    based on a prop passed down from the parent, which determines the number of grandchildren components to render.
+                </div>
+                <div>
+                    <img className="full-image" src={pic11} />
                 </div>
                 <div className="sub-container">
                     <div className="section-title">

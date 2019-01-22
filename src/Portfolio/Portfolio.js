@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
+import pic1 from '../reactrouter.png';
+import pic2 from '../react.png';
 
 class Portfolio extends Component {
   render() {
     return (
-        <div>
+        <div  className="background">
             <div className="black-bar"></div>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
@@ -16,6 +18,13 @@ class Portfolio extends Component {
                 </div>
                 <div className="bio">
                     I built this website using React and React Router, as a single page application. 
+                </div>
+                <div className="pictureText">
+                    <img className="logo" src={pic2} />
+                    <img className="logo" src={pic1} />
+                </div>
+                <div className="bio">
+                    <br/><br/><br/><br/><br/><br/>
                 </div>
             </div>
             <div className="black-bar">

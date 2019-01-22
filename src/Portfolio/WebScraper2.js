@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
-import pic1 from '../QQScreenShots/11.png';
-import pic2 from '../QQScreenShots/12.png';
-import pic3 from '../QQScreenShots/13.png';
-import pic4 from '../QQScreenShots/14.png';
-import pic5 from '../QQScreenShots/15.png';
-import pic6 from '../QQScreenShots/16.png';
-import pic7 from '../QQScreenShots/17.png';
-import pic8 from '../QQScreenShots/18.png';
+import pic1 from '../WS2ScreenShots/1.png';
+import pic2 from '../WS2ScreenShots/2.png';
 import ScrollButton from '../ScrollButton';
 
 class WebScraper2 extends Component {
@@ -20,64 +14,35 @@ class WebScraper2 extends Component {
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">
-                        Web Scraper
+                        Web Scraper<br/><br/>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/WebScraper2">https://github.com/schvetsov/WebScraper2</a>
                     </div>
                 </div>
                 <div className="bio">
                     During my time at MedMal Direct, I created several web scrapers to automate web searches. 
-                    This is one of them. This particular web scraper automates searches done on this website: 
+                    This is one of them. This particular web scraper performs Google searches, takes a screenshot of 
+                    the results, and pastes it into Excel.
                 </div>
-                <img className="full-image" src={pic1} />
                 <div className="sub-container">
                     <div className="section-title">
                         How It Works
                     </div>
                 </div>
                 <div className="bio">
-                    The first step the macro takes is to manipulate the url of the website.
+                    Here we have a liste of addresses in Column A that we want to verify through Google. We click the 
+                    button on the right called "Execute Search" and sit back and relax.
                 </div>
-                <img className="full-image" src={pic2} />
-                <div className="bio">
-                    Instead of walking through the DOM (document object model) of the website to fill in the form elements, we can just 
-                    create a new url string for every search. This will save an immense amount of time and we will 
-                    be able to perform multiple searches per second this way.
-                </div>
-                <img className="full-image" src={pic3} />
-                <div className="bio">
-                    The next step the program takes is to establish a connection to the webpage's server. This is accomplished 
-                    by enabling the XML and HTTP libraries in Excel VBA, and performing an xmlHTTP get request.
-                </div>
-                <img className="full-image" src={pic4} />
-                <div className="bio">
-                    Once the connection is established, we can walk through the webpage's HTML elements, and find 
-                    the one that contains the NPI. But first, since we want the accuracy to be 100%, we have to exclude 
-                    the searches that produce 0 NPI's and more than 1 NPI.
-                </div>
-                <div className="bio">
-                    We don't want this:
-                </div>
-                <img className="full-image" src={pic7} />
-                <div className="bio">
-                    Or this:
-                </div>
-                <img className="full-image" src={pic8} />
-                <div className="bio">
-                    This is how we skip these entries:
-                </div>
-                <img className="full-image" src={pic5} />
-                <div className="bio">
-                    If there is only 1 NPI in the search results, it is the correct one and we pull it out of the 
-                    webpage, and store it in a cell on the spreadsheet. The program then goes down a row on the spreadsheet 
-                    to the next name, and does it until there are no more entries left. This macro also runs with a timer, 
-                    and a message box will appear at the end telling you how many seconds it took for the code to run. 
-                    This macro can process about 2-4 searches per second, which is much faster than doing it manually.
-                </div>
-                <img className="full-image" src={pic6} />
+                <img className="full-image" src={pic1} />
                 <div className="sub-container">
                     <div className="section-title">
                         Results
                     </div>
                 </div>
+                <div className="bio">
+                    As you can see, we have 20 new worksheets with screenshots of our Google searches, which we can look 
+                    through instead of having to type the address into Google 20 times, and it took only 49 seconds.
+                </div>
+                <img className="full-image" src={pic2} />
             </div>
             <div className="black-bar">
             </div>

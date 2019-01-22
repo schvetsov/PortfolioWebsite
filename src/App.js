@@ -88,7 +88,7 @@ class App extends Component {
                 <Link to="/project1">QuickQuote Mobile</Link>
                 <Link to="/project7">Portfolio Website</Link>
                 <Link to="/project2">Import Algorithm</Link>
-                <Link to="/project3">Rating Engine</Link>
+                {/* <Link to="/project3">Rating Engine</Link> */}
                 <Link to="/project4">Web Scraper 1</Link>
                 <Link to="/project5">Web Scraper 2</Link>
                 <Link to="/project6">Time Value of Money Calculator</Link>
