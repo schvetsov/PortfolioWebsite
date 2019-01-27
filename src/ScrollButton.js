@@ -47,7 +47,7 @@ componentWillUnmount(){
         const classHide = this.state.isHide ? '' : 'hide';
         return <a title='Back to top' className={`scroll-top ${classHide}`}
                  onClick={ () => { this.scrollToTop(); }}>
-                  <span>Top</span>
+                  <span className="scroll-top-text">Top</span>
                 </a>;
      }
   }

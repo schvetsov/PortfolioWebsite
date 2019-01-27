@@ -24,6 +24,8 @@ class Portfolio extends Component {
                     <img className="logo" src={pic1} />
                 </div>
                 <div className="bio">
+                    I wrote the CSS manually with a lot of help from W3schools.com and stackoverflow.com 
+                    The slideshow was created with keyframes. The header created with flexbox.
                     <br/><br/><br/><br/><br/><br/>
                 </div>
             </div>

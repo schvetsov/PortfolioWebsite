@@ -14,7 +14,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        {/* <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="4000">
               <div className="item">
@@ -40,11 +40,23 @@ class Home extends Component {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
+        </div> */}
         {/* <div id="f1"></div> */}
 
-
-
+        
+        <div className="slideshow-box">
+          <div className="fadein">
+            {/* <div className="item" id="f1"> */}
+              <img id="g1" src={pic1} class="d-block w-100" alt="..."/>
+            {/* </div> */}
+            {/* <div className="item" id="f2"> */}
+              <img id="g2" src={pic2} class="d-block w-100" alt="..."/>
+            {/* </div> */}
+            {/* <div className="item" id="f3"> */}
+              <img id="g3" src={pic3} class="d-block w-100" alt="..."/>
+            {/* </div> */}
+          </div>
+        </div>
 
           <div className="black-bar"></div>
           <ScrollButton scrollStepInPx="800" delayInMs="0"/>

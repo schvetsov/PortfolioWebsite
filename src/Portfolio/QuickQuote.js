@@ -227,6 +227,10 @@ class QuickQuote extends Component {
                         The Final Product
                     </div>
                 </div>
+                <div className="bio3">
+                    This is the form that we receive in our email. To be safe, I covered up the sensitive details
+                    of the form such as the logo, signature, and details of the coverage.
+                </div>
                 <div>
                     <img className="full-image" src={pic10} />
                 </div>
