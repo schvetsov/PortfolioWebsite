@@ -222,7 +222,7 @@ a {
     padding: 8px 20px;
     text-decoration: none;
     text-align: center;
-    width: 120px;
+    width: 200px;
     -webkit-transition: background-color .2s;
     transition: background-color .2s;
     /* border: 1px solid black; */
@@ -235,7 +235,7 @@ a {
       .navbar1 a:hover{
         background-color: rgba(128, 209, 204, 0.2);
         /* background-color: rgba(15, 189, 88, 0.2); */
-        width: 120px;
+        width: 200px;
         animation: 0.4s multicolor;
       }
 
@@ -272,7 +272,7 @@ a {
             padding: 8px 20px;
             text-decoration: none;
             text-align: center;
-            width: 120px;
+            width: 200px;
             z-index: 20;
         }
 
@@ -706,7 +706,7 @@ a {
 .item img {
   height: 50vh;
   /* width: 200px; */
-  min-width: 1600px;
-  object-fit: contain;
+  /* min-width: 800px; */
+  object-fit: cover;
   z-index: 10;
 }

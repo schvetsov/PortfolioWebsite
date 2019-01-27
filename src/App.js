@@ -77,7 +77,7 @@ class App extends Component {
         </div>
         <div className="navbar1">
           <Link to ="/">Home</Link>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
           {/* <a href="#scroll-down">About</a> */}
           <Link to="/resume">Resume</Link>
           <div className="dropdown1">
