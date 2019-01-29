@@ -506,7 +506,7 @@ a {
   #medmal-logo {
     height: 83px;
     width: auto;
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     /* border: 1px solid black; */
   }
 
