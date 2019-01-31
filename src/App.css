@@ -151,13 +151,11 @@ a {
         /* border: 1px solid black; */
       }
 
-      .tooltip1 {
+      /* .tooltip1 {
         position: relative;
         display: inline-block;
         font-size: 14px;
-        /* width: 100px; */
-        /* z-index: 20; */
-        /* border-bottom: 1px dotted white; */
+        z-index: 20;
       }
       
       .tooltip1 .tooltiptext {
@@ -169,7 +167,7 @@ a {
         border-radius: 6px;
         padding: 5px 0;
         position: absolute;
-        /* z-index: 20; */
+        z-index: 20;
         top: 150%;
         left: 50%;
         margin-left: -60px;
@@ -184,13 +182,13 @@ a {
         border-width: 5px;
         border-style: solid;
         border-color: transparent transparent black transparent;
-        /* z-index: 20; */
+        z-index: 20;
       }
       
       .tooltip1:hover .tooltiptext {
         visibility: visible;
-        /* z-index: 20; */
-      }
+        z-index: 20;
+      } */
 
 /* MENU */
 
