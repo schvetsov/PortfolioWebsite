@@ -8,7 +8,7 @@ import pic6 from '../QQScreenShots/6.png';
 import pic7 from '../QQScreenShots/7.png';
 import pic8 from '../QQScreenShots/8.png';
 import pic9 from '../QQScreenShots/9.png';
-import pic10 from '../QQScreenShots/10.png';
+import pic10 from '../QQScreenShots/10.jpg';
 import pic11 from '../QQScreenShots/26.png';
 import ScrollButton from '../ScrollButton';
 

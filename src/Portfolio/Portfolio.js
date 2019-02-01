@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import '../App.css';
 import pic1 from '../reactrouter.png';
 import pic2 from '../react.png';
+import pic3 from '../firebase.png';
 
 class Portfolio extends Component {
   render() {
@@ -21,7 +22,15 @@ class Portfolio extends Component {
                 </div>
                 <div className="pictureText">
                     <img className="logo" src={pic2} />
+                    <p>Built in React</p>
+                </div>
+                <div className="pictureText">
                     <img className="logo" src={pic1} />
+                    <p>Used React Router for routing</p>
+                </div>
+                <div className="pictureText">
+                    <img className="logo" src={pic3} />
+                    <p>Deployed with Firebase</p>
                 </div>
                 <div className="bio">
                     I wrote the CSS manually with a lot of help from W3schools.com and stackoverflow.com 
