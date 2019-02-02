@@ -21,16 +21,16 @@ class Portfolio extends Component {
                     I built this website using React and React Router, as a single page application. 
                 </div>
                 <div className="pictureText">
-                    <img className="logo" src={pic2} />
-                    <p>Built in React</p>
+                    <img className="logo1" src={pic2} />
+                    <div className="logo1">Built in React</div>
                 </div>
                 <div className="pictureText">
-                    <img className="logo" src={pic1} />
-                    <p>Used React Router for routing</p>
+                    <img className="logo2" src={pic1} />
+                    <div className="logo2">Used React Router for routing</div>
                 </div>
                 <div className="pictureText">
-                    <img className="logo" src={pic3} />
-                    <p>Deployed with Firebase</p>
+                    <img className="logo3" src={pic3} />
+                    <div className="logo3">Deployed with Firebase</div>
                 </div>
                 <div className="bio">
                     I wrote the CSS manually with a lot of help from W3schools.com and stackoverflow.com 
