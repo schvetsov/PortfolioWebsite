@@ -4,13 +4,13 @@ import logo from './logo.png';
 import node from './output3.png';
 import redux from './output4.png';
 import './App.css';
-import Home from './Home';
-import About from './About';
-import Resume from './Resume';
-import QuickQuote from './Portfolio/QuickQuote';
-import TVMCalc from './Portfolio/TVMCalc';
-import WebScraper from './Portfolio/WebScraper';
-import Portfolio from './Portfolio/Portfolio';
+import Home from './Pages/Home';
+// import About from './About';
+import Resume from './Pages/Resume';
+import QuickQuote from './Pages/QuickQuote';
+import TVMCalc from './Pages/TVMCalc';
+import WebScraper from './Pages/WebScraper';
+import Portfolio from './Pages/Portfolio';
 // import ImportAlg from './Portfolio/ImportAlg';
 
 class App extends Component {
@@ -66,7 +66,7 @@ class App extends Component {
             </div>
           </div>
           <Route exact path="/" exact component={Home} />
-          <Route path="/about" exact component={About} />
+          {/* <Route path="/about" exact component={About} /> */}
           <Route path="/resume" exact component={Resume} />
           <Route path="/project1" exact component={QuickQuote} />
           {/* <Route path="/project2" exact component={ImportAlg} /> */}

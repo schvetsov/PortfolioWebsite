@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
-import pic1 from './main2.JPG';
-import pic2 from './berlinstreet.jpg';
-import pic3 from './berlinskyline.jpg';
-import headshot from './headshot.png';
-import medmal from './medmal.png';
-import fsu from './fsu.png';
-import ScrollButton from './ScrollButton';
+import '../App.css';
+import pic1 from '../main2.JPG';
+import pic2 from '../berlinstreet.jpg';
+import pic3 from '../berlinskyline.jpg';
+import headshot from '../headshot.png';
+import medmal from '../medmal.png';
+import fsu from '../fsu.png';
+import ScrollButton from '../ScrollButton';
 import CrossfadeImage from 'react-crossfade-image';
 
 const images = [

@@ -4,12 +4,14 @@ import '../App.css';
 import pic1 from '../reactrouter.png';
 import pic2 from '../react.png';
 import pic3 from '../firebase.png';
+import ScrollButton from '../ScrollButton';
 
 class Portfolio extends Component {
   render() {
     return (
         <div  className="background">
             <div className="black-bar"></div>
+            <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
                 <div className="sub-container">
                     <div className="section-title">
