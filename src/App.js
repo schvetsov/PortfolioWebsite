@@ -33,19 +33,16 @@ class App extends Component {
                 <div className="title1-sub-container">
                   <div className="tooltip1">
                     <span><img src={logo} height = '36px'/></span>
-                    {/* <span className="tooltiptext">React</span> */}
                   </div>
                 </div>
                 <div className="title1-sub-container">
                   <div className="tooltip1">
                     <span><img src={node} height = '36px'/></span>
-                    {/* <span className="tooltiptext">Node</span> */}
                   </div>
                 </div>
                 <div className="title1-sub-container">
                   <div className="tooltip1">
                     <span><img src={redux} height = '36px'/></span>
-                    {/* <span className="tooltiptext">Redux</span> */}
                   </div>
                 </div>
                 <div className="title1-sub-container" id="right-side">

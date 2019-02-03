@@ -8,6 +8,7 @@ import pic4 from '../QQScreenShots/22.png';
 import pic5 from '../QQScreenShots/23.png';
 import pic6 from '../QQScreenShots/24.png';
 import pic7 from '../QQScreenShots/25.png';
+import java from '../java.png';
 import ScrollButton from '../ScrollButton';
 
 class TVMCalc extends Component {
@@ -24,10 +25,13 @@ class TVMCalc extends Component {
                         Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/TVMCalc">https://github.com/schvetsov/TVMCalc</a>
                     </div>
                 </div>
-                <div className="bio">
+                <div className="pictureText">
+                    <img id="headshot" src={java}/>
+                    <div className="bio2">
                     This is an actuarial calculator I wrote in Java. It is ran in the terminal, and asks the 
                     user a series of questions pertaining to a potential investment, and calculates the future 
                     value of that investment based on the input.
+                    </div>
                 </div>
                 <div className="sub-container">
                     <div className="section-title">

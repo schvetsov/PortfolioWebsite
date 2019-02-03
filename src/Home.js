@@ -7,16 +7,40 @@ import headshot from './headshot.png';
 import medmal from './medmal.png';
 import fsu from './fsu.png';
 import ScrollButton from './ScrollButton';
+import CrossfadeImage from 'react-crossfade-image';
+
+const images = [
+  pic1, pic2, pic3
+];
 
 class Home extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      imageIndex: 0
+    };
+    this.changeImage = this.changeImage.bind(this);
+  }
+  componentDidMount() {
+    this.intervalId = setInterval(() => this.changeImage(), 4000);
+  }
+  changeImage() {
+    if (this.state.imageIndex === images.length - 1) {
+      this.setState({ imageIndex: 0 });
+    } else {
+      this.setState({ imageIndex: this.state.imageIndex + 1 });
+    }
+  }
+
   render() {
     return (
       <div>
         <div className="slideshow-box">
           <div className="fadein">
-            <img id="g1" src={pic1} class="d-block w-100" alt="..."/>
-            <img id="g2" src={pic2} class="d-block w-100" alt="..."/>
-            <img id="g3" src={pic3} class="d-block w-100" alt="..."/>
+            <img id="g1" src={pic3} alt="..."/>
+            <img id="g2" src={pic2} alt="..."/>
+            <img id="g3" src={pic1} alt="..."/>
           </div>
         </div>
         <div className="black-bar"></div>

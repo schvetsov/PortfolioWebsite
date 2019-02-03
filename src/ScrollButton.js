@@ -39,8 +39,9 @@ componentWillUnmount(){
     }
     
     scrollToTop() {
-      let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-      this.setState({ intervalId: intervalId });
+    //   let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    //   this.setState({ intervalId: intervalId });
+    window.scrollTo(0, 0)
     }
     
     render () {

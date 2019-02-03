@@ -7,6 +7,7 @@ import pic3 from '../WS3ScreenShots/3.png';
 import pic4 from '../WS3ScreenShots/4.png';
 import pic5 from '../WS3ScreenShots/5.png';
 import pic6 from '../WS3ScreenShots/6.png';
+import vba from '../vba.png';
 import ScrollButton from '../ScrollButton';
 
 class WebScraper extends Component {
@@ -22,9 +23,14 @@ class WebScraper extends Component {
                         Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/WebScraper3">https://github.com/schvetsov/WebScraper3</a>
                     </div>
                 </div>
-                <div className="bio">
-                    During my time at MedMal Direct, I created several web scrapers to automate web searches. 
-                    This is one of them. This particular web scraper automates searches done on this website:
+                <div className="pictureText">
+                    <img id="headshot" src={vba}/>
+                    <div className="bio2">
+                    During my time at MedMal Direct, I created several web scrapers to automate web searches using 
+                    Microsoft's Visual Basic for Application's programming language. I would use XML and HTTP libraries 
+                    to be able to send xmlHTTP requests and walk through the webpages to pull data, and transfer 
+                    the data into an Excel spreadsheet. This particular web scraper automates searches done on this website:
+                    </div>
                 </div>
                 <img className="full-image" src={pic6} />
                 <div className="bio">
