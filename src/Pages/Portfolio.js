@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import '../App.css';
-import pic1 from '../reactrouter.png';
-import pic2 from '../react.png';
-import pic3 from '../firebase.png';
+import pic1 from '../PWScreenShots/reactrouter.png';
+import pic2 from '../PWScreenShots/react.png';
+import pic3 from '../PWScreenShots/firebase.png';
 import ScrollButton from '../ScrollButton';
 
 class Portfolio extends Component {
   render() {
     return (
-        <div  className="background">
+        <div className="background">
             <div className="black-bar"></div>
             <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div className="main-container" id="scroll-down">
@@ -19,31 +19,31 @@ class Portfolio extends Component {
                         Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/PortfolioWebsite">https://github.com/schvetsov/PortfolioWebsite</a>
                     </div>
                 </div>
-                <div className="bio">
-                    I built this website using React and React Router, as a single page application. 
-                </div>
                 <div className="pictureText">
                     <img className="logo1" src={pic2} />
-                    <div className="logo1">Built in React</div>
+                    <div className="logo1">
+                        I built this website completely from scratch with HTML and CSS using the React library. 
+                        I did not use any templates or Bootstrap, because I wanted to learn the fundamentals of 
+                        web design.
+                    </div>
                 </div>
                 <div className="pictureText">
                     <img className="logo2" src={pic1} />
-                    <div className="logo2">Used React Router for routing</div>
+                    <div className="logo2">
+                        This website was built as a single page application (SPA), which is made possible by React Router.
+                    </div>
                 </div>
                 <div className="pictureText">
                     <img className="logo3" src={pic3} />
-                    <div className="logo3">Deployed with Firebase</div>
-                </div>
-                <div className="bio">
-                    I wrote the CSS manually with a lot of help from W3schools.com and stackoverflow.com 
-                    The slideshow was created with keyframes. The header created with flexbox.
-                    <br/><br/><br/><br/><br/><br/>
+                    <div className="logo3">
+                        I chose Google's Firebase for deployment.
+                    </div>
                 </div>
             </div>
             <div className="black-bar">
             </div>
-            <div className="footer-fixed">
-                    Credits: Photo: Taken by Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+            <div className="footer">
+                    Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
             </div>
         </div>
     );

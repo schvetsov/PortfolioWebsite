@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
-import logo from './logo.png';
-import node from './output3.png';
-import redux from './output4.png';
+import react from './HomeScreenShots/react.png';
+import node from './HomeScreenShots/node.png';
+import redux from './HomeScreenShots/redux.png';
 import './App.css';
 import Home from './Pages/Home';
 // import About from './About';
@@ -32,7 +32,7 @@ class App extends Component {
             </div>
                 <div className="title1-sub-container">
                   <div className="tooltip1">
-                    <span><img src={logo} height = '36px'/></span>
+                    <span><img src={react} height = '36px'/></span>
                   </div>
                 </div>
                 <div className="title1-sub-container">

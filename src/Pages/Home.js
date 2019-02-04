@@ -1,37 +1,12 @@
 import React, { Component } from 'react';
 import '../App.css';
-import pic1 from '../main2.JPG';
-import pic2 from '../berlinstreet.jpg';
-import pic3 from '../berlinskyline.jpg';
-import headshot from '../headshot.png';
-import medmal from '../medmal.png';
-import fsu from '../fsu.png';
+import pic1 from '../HomeScreenShots/main2.JPG';
+import pic2 from '../HomeScreenShots/berlinstreet.jpg';
+import pic3 from '../HomeScreenShots/berlinskyline.jpg';
+import headshot from '../HomeScreenShots/headshot.png';
 import ScrollButton from '../ScrollButton';
-import CrossfadeImage from 'react-crossfade-image';
-
-const images = [
-  pic1, pic2, pic3
-];
 
 class Home extends Component {
-
-  constructor() {
-    super();
-    this.state = {
-      imageIndex: 0
-    };
-    this.changeImage = this.changeImage.bind(this);
-  }
-  componentDidMount() {
-    this.intervalId = setInterval(() => this.changeImage(), 4000);
-  }
-  changeImage() {
-    if (this.state.imageIndex === images.length - 1) {
-      this.setState({ imageIndex: 0 });
-    } else {
-      this.setState({ imageIndex: this.state.imageIndex + 1 });
-    }
-  }
 
   render() {
     return (
@@ -53,7 +28,7 @@ class Home extends Component {
           </div>
             <div className="bio">
               Hello, and welcome to my professional webpage. I created it to showcase my experience and talents 
-              as a software developer. Feel free to look at my resume and portfolio, and contact me if you have 
+              as a software developer. Feel free to check out my resume and portfolio, and contact me if you have 
               any inquiries.
             </div>
           <div className="pictureText">

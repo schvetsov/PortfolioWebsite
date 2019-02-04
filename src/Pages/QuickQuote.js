@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
 import '../App.css';
 import pic1 from '../QQScreenShots/1.png';
 import pic2 from '../QQScreenShots/2.png';
-import pic5 from '../QQScreenShots/5.png';
 import pic6 from '../QQScreenShots/6.png';
 import pic7 from '../QQScreenShots/7.png';
 import pic8 from '../QQScreenShots/8.png';
@@ -27,10 +25,10 @@ class QuickQuote extends Component {
                     </div>
                 </div>
                 <div className="bio">
-                    The QuickQuote is a mobile rating application that I developed for MedMal Direct Insurance Company. 
+                    The QuickQuote is a mobile rating application that I developed while working for MedMal Direct. 
                     The idea is for our sales people to be able to produce quotes for low risk business, and have those quote forms 
-                    emailed to themselves, all from their mobile device. It was created with React Native in the front end, and a Node back end.
-                    I also used many additional API's and packages, the full list:
+                    emailed to their work email, all from their mobile device. It was created with React Native in the front end, and Node.js in the back end.
+                    I also used many additional API's and packages, here is the full list:
                 </div>
                 <div className="table-container">
                     <table className="stackTable">
@@ -119,9 +117,10 @@ class QuickQuote extends Component {
                 </div>
                 <div className="bio">
                     The app is modeled with children and grandchildren components, and the grandchildren lift up the state using 
-                    callbacks all the way back out to the parent component. The IndivDocs and IndivAllieds are reusable components, 
-                    that can be used a maximum of 3 times each. The children components, Doctors and Allieds, map and render an array 
-                    based on a prop passed down from the parent, which determines the number of grandchildren components to render.
+                    callbacks all the way back out to the parent component. The IndivDocs and IndivAllieds componenents are used to add 
+                    entry fields to the form for each insured. They are reusable componenets and can be used a maximum of 3 times each. 
+                    The children components, Doctors and Allieds, map and render an array based on a prop passed down from the parent, 
+                    which determines the number of grandchildren components to render.
                 </div>
                 <div>
                     <img className="full-image" src={pic11} />
@@ -135,10 +134,10 @@ class QuickQuote extends Component {
                     <div className="bio3">
                     When the app is launched, it takes the user to a login screen. If you look closely, you will notice there is 
                     no 'register' link. I created this by design, so the company has full control over who is able to access and use 
-                    the app. Right now a few very important things have happened. The node js backend has established a connection with 
+                    the app. Once the Login Screen is loaded, a few very important things have happened. The Node.js backend has established a connection with 
                     the MongoDB server, and has imported the relativity tables that are used for the premium calculations. These tables will 
-                    be stored in the backend for now. When the user enters their login information, their password is hashed and salted with 
-                    bcrypt, and the hash is matched to a document contained in MongoDB. If a match is found, a token is sent back and the main 
+                    be stored in the backend for now. When the user enters his/her login information, the password is hashed and salted with 
+                    Bcrypt, and the hash is matched to a document contained in MongoDB. If a match is found, a token is sent back and the main 
                     screen is rendered.
                     </div>
                     <div className="hover-caption">
@@ -170,10 +169,9 @@ class QuickQuote extends Component {
                 </div>
                 <div className="pictureText">
                     <div className="bio3">
-                    When the user selects "2" from the "Number of Physicians" dropdown, it triggers a rerender which adds "Physician 1" and "Physician 2" 
-                    to the bottom of the form. The user is then able to fill in information about that doctor which is needed to calculate 
-                    the premium. If the user selects "1", another rerender will be triggered which will remove the "Physician 2" grandchild from 
-                    the form.
+                    For this example we will rate 2 physicians. When the user selects "2" from the "Number of Physicians" dropdown, it triggers a rerender which adds "Physician 1" and "Physician 2" 
+                    to the bottom of the form. The user is then able to fill in information about that physician which is needed to calculate 
+                    the premium.
                     </div>
                     <div className="hover-caption">
                         (hover to enlarge)
@@ -228,8 +226,7 @@ class QuickQuote extends Component {
                     </div>
                 </div>
                 <div className="bio3">
-                    This is the form that we receive in our email. To be safe, I covered up the sensitive details
-                    of the form such as the logo, signature, and details of the coverage.
+                    This is the form that we receive in our email. To be safe, I redacted some sensitive information that was on the form.
                 </div>
                 <div>
                     <img className="full-image" src={pic10} />
@@ -238,7 +235,7 @@ class QuickQuote extends Component {
             <div className="black-bar">
             </div>
             <div className="footer">
-                    Credits: Photo: Taken by Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+                    Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
             </div>
         </div>
     );

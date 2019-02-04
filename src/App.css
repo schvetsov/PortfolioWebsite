@@ -1,19 +1,11 @@
 
 @font-face {
-  font-family: 'Dual';
-  src: local('MyFont'), url(./Dual/Dual-300.otf) format('opentype');
-}
-@font-face {
   font-family: 'Nauman-Reg';
   src: local('MyFont'), url(./Nauman/Nauman_Regular_Regular.otf) format('opentype');
 }
 @font-face {
   font-family: 'Nauman-Med';
   src: local('MyFont'), url(./Nauman/Nauman-Medium.otf) format('opentype');
-}
-@font-face {
-  font-family: 'Metrisch';
-  src: local('MyFont'), url(./Metrisch/FormikaStudioMetrisch/Desktop/Metrisch-Light.otf) format('opentype');
 }
 
 html {
@@ -26,8 +18,7 @@ html {
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                        supported by Chrome and Opera */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 span {
@@ -44,10 +35,7 @@ a {
   background-image: linear-gradient(to bottom right, 
   rgba(105, 105, 105, 0.4), 
   rgba(27, 27, 27, 0.4));
-  /* height: 2400px; */
   font-family: Nauman-Med, Helvetica, sans-serif;
-  /* position: relative;
-  z-index: -2; */
 }
 
 .background2 {
@@ -89,109 +77,49 @@ a {
 
     .title1-sub-container {
       padding: 10px;
-      /* border: 1px solid white; */
-      
     }
-
-    /* .title-sub-sub-container {
-      display: inline-block;
-      border: 1px solid white;
-    } */
 
     #left-side {
       min-width: 540px;
-      /* border: 1px solid white; */
     }
 
     #right-side {
       display: inline;
       padding: 10px;
       min-width: 150px;
-      /* border: 1px solid hotpink; */
     }
 
       .name {
         font-size: 36px;
         display: inline;
         padding-left: 20px;
-        /* border: 1px solid white; */
       }
 
       .name-bottom {
         font-size: 16px;
-        /* text-align: right; */
         display: inline;
         padding-left: 10px;
-        /* border: 1px solid white; */
-
       }
 
       #linkedIn {
         display: inline-block;
         padding: 10px;
-        /* box-shadow: 5px 10px #888888; */
-        /* color: white; */
-        /* border: 1px solid white; */
       }
 
       #gitHub {
         display: inline-block;
         padding: 10px;
-        /* border: 1px solid white; */
       }
 
       .title1-sub-container > a {
         font-size: 24px;
         color: rgb(146, 146, 146);
-        
-        /* border: 1px solid black; */
       }
 
       .title1-sub-container > a:hover {
         font-size: 24px;
         color: rgb(255, 255, 255);
-        /* z-index: -1; */
-        /* border: 1px solid black; */
       }
-
-      /* .tooltip1 {
-        position: relative;
-        display: inline-block;
-        font-size: 14px;
-        z-index: 20;
-      }
-      
-      .tooltip1 .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 20;
-        top: 150%;
-        left: 50%;
-        margin-left: -60px;
-      }
-      
-      .tooltip1 .tooltiptext::after {
-        content: "";
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        margin-left: -5px;
-        border-width: 5px;
-        border-style: solid;
-        border-color: transparent transparent black transparent;
-        z-index: 20;
-      }
-      
-      .tooltip1:hover .tooltiptext {
-        visibility: visible;
-        z-index: 20;
-      } */
 
 /* MENU */
 
@@ -200,23 +128,10 @@ a {
   position: sticky;
   top: 0;
   display: flex;
-  /* z-index: -1; */
   background-color: rgba(235, 235, 235, 0.85);
-  /* background-image: linear-gradient(to bottom right, 
-  rgba(255, 187, 0, 0.1), 
-  rgba(181, 94, 201, 0.1)); */
   font-size: 12px;
   justify-content: center;
   z-index: 15;
-  /* border-width: 1px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to right, 
-      rgba(255, 0, 0, 0.4), 
-      rgba(255, 0, 255, 0.4)
-    ) 1 stretch; */
-  /* border: 1px solid black; */
   box-shadow: 20px -10px 25px rgb(42, 42, 42), -20px -10px 25px rgb(42, 42, 42);
 }
 
@@ -228,7 +143,6 @@ a {
     width: 200px;
     -webkit-transition: background-color .2s;
     transition: background-color .2s;
-    /* border: 1px solid black; */
   }
 
     .navbar1 span {
@@ -237,7 +151,6 @@ a {
 
       .navbar1 a:hover{
         background-color: rgba(128, 209, 204, 0.2);
-        /* background-color: rgba(15, 189, 88, 0.2); */
         width: 200px;
         animation: 0.4s multicolor;
       }
@@ -245,17 +158,14 @@ a {
       @keyframes multicolor {
         0% {
           background-color: rgba(128, 209, 204, 0.6);
-          /* background-color: rgba(15, 189, 88, 0.6); */
         }
         100% {
           background-color: rgba(128, 209, 204, 0.2);
-          /* background-color: rgba(15, 189, 88, 0.2); */
         }
     }
 
       .dropbtn1 {
         display: inline-block;
-        /*background-color: #5a5a5a;*/
         text-align: center;
         color: white;
         text-decoration: none;
@@ -266,7 +176,6 @@ a {
       .dropdown1:hover .dropbtn1 {
           background-color: #444444;
           z-index: 20;
-          /* cursor: default; */
       }
 
         .dropdown1 {
@@ -292,7 +201,6 @@ a {
             .dropdown1-content a {
                 background-color: white;
                 color: black;
-                /* padding: 8px 16px; */
                 text-decoration: none;
                 display: block;
                 text-align: left;
@@ -304,13 +212,10 @@ a {
             .dropdown1-content a:hover {
               width: auto;
               background-color: rgba(128, 209, 204, 0.2);
-              /* cursor: pointer; */
             }
 
             .dropdown1:hover .dropdown1-content {
                 display: block;
-                /* cursor: pointer; */
-                /* background-color: rgba(15, 189, 88, 0.2); */
             }
 
 /* SLIDESHOW */
@@ -322,11 +227,8 @@ a {
   -webkit-animation-duration: 12s;
   animation-name: fade;
   animation-iteration-count: infinite;
-  /* animation-timing-function: ease-in-out; */
   animation-duration: 12s;
   height: 50vh;
-  /* width: 200px; */
-  /* min-width: 800px; */
   object-fit: cover;
   z-index: 10;
   opacity: 0;
@@ -364,52 +266,13 @@ a {
       width: 100%;
     }
 
-    
-
     .slideshow-box {
-      /* background-color: white; */
       height: 50vh;
     }
 
+
 /* MAIN CONTENT */
 
-/* #f1 {
-  background-image: url("main2.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s; 
-   -ms-animation: fadein 3s; 
-    -o-animation: fadein 3s; 
-       animation: fadein 3s;
-}
-
-@keyframes fadein {
-  from { opacity: 0.1; }
-  to   { opacity: 1; }
-}
-
-@-moz-keyframes fadein {
-  from { opacity: 0.1; }
-  to   { opacity: 1; }
-}
-
-@-webkit-keyframes fadein {
-  from { opacity: 0.1; }
-  to   { opacity: 1; }
-}
-
-@-ms-keyframes fadein {
-  from { opacity: 0.1; }
-  to   { opacity: 1; }
-}
-
-@-o-keyframes fadein {
-  from { opacity: 0.1; }
-  to   { opacity: 1; }
-} */
 
 .main-container {
   background-color: rgb(211, 211, 211);
@@ -419,38 +282,26 @@ a {
   margin: auto;
   padding: 0px 0px 40px 0px;
   font-size: 14px;
-  /* border: 1px solid black; */
   box-shadow: 5px 10px 18px #161616;
 }
 
 .black-bar {
   height: 40px;
-  /* background-color: rgb(40, 40, 40); */
-    /* background-image: linear-gradient(to bottom right, 
-  rgba(155, 124, 165, 0.4), 
-  rgba(27, 27, 27, 0.4)); */
-  
 }
 
   .sub-container {
     padding: 20px;
     display: flex;
-    /* border: 1px solid blue; */
   }
 
     .sub-sub-container {
       color: white;
       padding: 20px;
-      /* width: 200px; */
-      /* margin: auto; */
-      /* border: 1px solid blue; */
     }
 
       .pictureText {
-        
         padding: 0px 80px;
         display: flex;
-        /* border: 1px solid blue; */
       }
 
   .section-title {
@@ -460,20 +311,13 @@ a {
     text-align: center;
     width: 100%;
     margin: auto;
-    /* box-shadow: 1px 1px 5px #3a3a3a; */
     background-color: rgb(44, 44, 44);
-    /* background-image: linear-gradient(to bottom right, 
-    rgb(75, 75, 75), 
-    rgb(63, 63, 63)); */
     color: rgb(207, 207, 207);
-    /* border: 1px solid black; */
   }
 
   #headshot {
     height: 150px;
     width: auto;
-    /* padding: 20px 20px; */
-    /* border: 1px solid black; */
   }
 
   .bio {
@@ -481,77 +325,32 @@ a {
     text-indent: 50px;
     padding: 0px 80px;
     padding-bottom: 20px;
-    /* padding: 20px; */
-    /* border: 1px solid black; */
   }
 
   .bio2 {
     display: inline-block;
-    /* text-indent: 50px; */
     padding-left: 20px;
-    /* padding: 20px; */
-    /* border: 1px solid black; */
   }
 
   #medmal-logo {
     height: 83px;
     width: auto;
-    /* padding: 20px 0px; */
-    /* border: 1px solid black; */
   }
 
   #fsu-logo {
     height: 154px;
     width: auto;
-    /* padding: 0px 0px; */
-    /* border: 1px solid black; */
   }
 
-    .skillsTable {
-      width: 600px;
-      margin: auto;
-      padding: 20px;
-      background-color: rgb(59, 59, 59);
-      background-image: linear-gradient(to bottom right, 
-      rgba(73, 73, 73, 0.4), 
-      rgba(0, 0, 0, 0.4));
-    }
-
-      .columnone {
-        width: 20px;
-        /* border: 1px solid black; */
-        padding-left: 15px;
-      }
-
-      .columnone img {
-        width: 20px;
-      }
-
-      .columntwo {
-        width: 80px;
-        color: white;
-        font-size: 14px;
-        /* border: 1px solid black; */
-      }
-
-      .columnthree {
-        width: 40px;
-        /* border: 1px solid black; */
-      }
-
-      .fa-star {
-        font-size: 10px;
-        color: yellow;
-      }
 
 /*QUICKQUOTE*/
+
 
 .table-container {
   padding-bottom: 40px;
 }
 
   .stackTable {
-    /* width: 640px; */
     border-collapse: collapse;
     margin: auto;
     padding: 20px 10px 40px 10px;
@@ -572,7 +371,6 @@ a {
 
     .colone {
       width: 90px;
-      /* border: 1px solid black; */
       padding: 0px 0px 0px 15px;
     }
 
@@ -580,24 +378,26 @@ a {
       width: 110px;
       color: white;
       padding: 2px 0px 2px 0px;
-      /* border: 1px solid black; */
     }
 
     .colthree {
       width: 420px;
       padding: 2px 0px 2px 0px;
-      /* border: 1px solid black; */
     }
 
       .zoom {
         height: 200px;
-        /* padding: 20px; */
         margin: 20px;
         transition: transform .2s;
-        /* width: 200px;
-        height: 200px;
-        margin: 0 auto; */
-        /* border: 1px solid black; */
+      }
+
+      .zoom2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        padding: 20px 0px;
+        transition: transform .2s;
       }
       
       .zoom:hover {
@@ -606,13 +406,18 @@ a {
         transform: scale(3); 
       }
 
+      .zoom2:hover {
+        -ms-transform: scale(2); /* IE 9 */
+        -webkit-transform: scale(2); /* Safari 3-8 */
+        transform: scale(2); 
+      }
+
       .full-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 75%;
         padding: 20px 0px;
-        /* border: 1px solid black; */
       }
 
       .bio3 {
@@ -623,7 +428,6 @@ a {
           display: block;
           font-size: 12px;
           text-align: center;
-          /* border: 1px solid black; */
         }
 
         .github-link {
@@ -642,8 +446,6 @@ a {
           margin-right: 20px;
           margin-top: 40px;
           margin-bottom: 20px;
-          /* padding: 20px 0px; */
-          /* border: 1px solid black; */
         }
 
         .logo2 {
@@ -652,8 +454,6 @@ a {
           margin-right: 20px;
           margin-top: 50px;
           margin-bottom: 80px;
-          /* padding: 20px 0px; */
-          /* border: 1px solid black; */
         }
 
         .logo3 {
@@ -662,8 +462,6 @@ a {
           margin-right: 20px;
           margin-top: 20px;
           margin-bottom: 40px;
-          /* padding: 20px 0px; */
-          /* border: 1px solid black; */
         }
 
 .scroll-top {
@@ -672,12 +470,8 @@ a {
   bottom: 0;
   background-color: rgba(102, 100, 100, 0.85);
   border: none;
-  color: hotpink;
-  /* padding: 12px 30px; */
   cursor: pointer;
   font-size: 14px;
-  /* width: 60px;
-  height: 60px; */
   z-index: 10;
   margin: 70px 20px;
   text-align: center;
@@ -689,7 +483,6 @@ a {
 }
 
 .hide{
-  /* display: none; */
   bottom: -140px;
 }
 
@@ -707,9 +500,6 @@ a {
   text-align: center;
   color: white;
   padding: 20px;
-  /* margin-top: -180px; */
-  /* negative value of footer height */
-  /* height: 180px; */
   clear: both;
   background-color: rgb(27, 27, 27);
   font-family: Nauman-Med, Helvetica, sans-serif;
@@ -732,7 +522,5 @@ a {
 
 .item img {
   height: 50vh;
-  /* width: 200px; */
-  /* min-width: 800px; */
   object-fit: cover;
 }

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
 import '../App.css';
-import pic1 from '../WS3ScreenShots/1.png';
-import pic2 from '../WS3ScreenShots/2.png';
-import pic3 from '../WS3ScreenShots/3.png';
-import pic4 from '../WS3ScreenShots/4.png';
-import pic5 from '../WS3ScreenShots/5.png';
-import pic6 from '../WS3ScreenShots/6.png';
-import vba from '../vba.png';
+import pic1 from '../WSScreenShots/1.png';
+import pic2 from '../WSScreenShots/2.png';
+import pic3 from '../WSScreenShots/3.png';
+import pic4 from '../WSScreenShots/4.png';
+import pic5 from '../WSScreenShots/5.png';
+import pic6 from '../WSScreenShots/6.png';
+import vba from '../WSScreenShots/vba.png';
 import ScrollButton from '../ScrollButton';
 
 class WebScraper extends Component {
@@ -27,15 +26,15 @@ class WebScraper extends Component {
                     <img id="headshot" src={vba}/>
                     <div className="bio2">
                     During my time at MedMal Direct, I created several web scrapers to automate web searches using 
-                    Microsoft's Visual Basic for Application's programming language. I would use XML and HTTP libraries 
-                    to be able to send xmlHTTP requests and walk through the webpages to pull data, and transfer 
-                    the data into an Excel spreadsheet. This particular web scraper automates searches done on this website:
+                    Microsoft's VBA programming language, and Excel. This page describes how one of those 
+                    web scrapers works. We will automate searches done on this website:
                     </div>
                 </div>
                 <img className="full-image" src={pic6} />
                 <div className="bio">
                     <br/>
-                    This is the form on the website we would fill out for the search:
+                    There are form elements on the website that a user would fill out and submit, to retrieve data about a certain insured. 
+                    We will be performing searches using the "License Number" field.
                 </div>
                 <img className="full-image" src={pic1} />
                 <div className="sub-container">
@@ -48,7 +47,10 @@ class WebScraper extends Component {
                     we have our license numbers of the physicians we want to look up. To the right we have a button 
                     that executes the macro. All the columns in between will be where our results show up.
                 </div>
-                <img className="full-image" src={pic3} />
+                <div className="hover-caption">
+                    (hover to enlarge)
+                    <img className="zoom2" src={pic3} />
+                </div>
                 <div className="bio">
                     The first step the macro takes is to manipulate the url of the website. The following 
                     is what the url looks like after we do the search. The last 5 numbers is the license number, 
@@ -58,24 +60,29 @@ class WebScraper extends Component {
                 </div>
                 <img className="full-image" src={pic2} />
                 <div className="bio">
-                    This is what our search result looks like when we do it manually. For this search, we are going 
-                    to pull the Practice Address. As you can see, it is under the name of the physician.
+                    This is what our search results look like when we do it manually. For this search, we are going 
+                    to pull the Practice Address. I highlighted it with a red box in the image below.
                 </div>
-                <img className="full-image" src={pic5} />
+                <div className="hover-caption">
+                    (hover to enlarge)
+                    <img className="zoom2" src={pic5} />
+                </div>
                 <div className="bio">
-                    The program locates the element that contains the practice address, and splits the string up by 
+                    The program locates the HTML element that contains the practice address, and splits the string up by 
                     address, county, state, and zip code, and places each piece in its own cell in the spreadsheet. 
                     Some addresses have multiple rows, which is why the columns don't match up in the results. As you 
-                    can see, we extracted 28 addresses by license numbers, in about 8 seconds. This is significantly 
-                    faster than doing it manually, and save a lot of time.
+                    can see, we extracted 28 addresses, in about 8 seconds. This is significantly 
+                    faster than doing it manually, and saves us a lot of time.
                 </div>
-                <img className="full-image" src={pic4} />
-                
+                <div className="hover-caption">
+                    (hover to enlarge)
+                    <img className="zoom2" src={pic4} />
+                </div>
             </div>
             <div className="black-bar">
             </div>
             <div className="footer">
-                    Credits: Photo: Taken by Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+                    Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
             </div>
         </div>
     );
