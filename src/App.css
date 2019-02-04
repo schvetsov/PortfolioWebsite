@@ -228,7 +228,7 @@ a {
   animation-name: fade;
   animation-iteration-count: infinite;
   animation-duration: 12s;
-  height: 50vh;
+  height: 34vh;
   object-fit: cover;
   z-index: 10;
   opacity: 0;
@@ -267,7 +267,7 @@ a {
     }
 
     .slideshow-box {
-      height: 50vh;
+      height: 34vh;
     }
 
 
@@ -286,7 +286,7 @@ a {
 }
 
 .black-bar {
-  height: 40px;
+  height: 20px;
 }
 
   .sub-container {
@@ -521,6 +521,6 @@ a {
 }
 
 .item img {
-  height: 50vh;
+  height: 34vh;
   object-fit: cover;
 }
