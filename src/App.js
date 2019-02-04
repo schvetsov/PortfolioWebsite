@@ -74,8 +74,10 @@ class App extends Component {
           <Route path="/project6" exact component={TVMCalc} />
           <Route path="/project7" exact component={Portfolio} />
         </div>
+        <div className="footer">
+          Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+        </div>
       </div>
-
     );
   }
 }
