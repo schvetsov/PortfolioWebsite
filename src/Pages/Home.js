@@ -27,13 +27,13 @@ class Home extends Component {
             </div>
           </div>
             <div className="bio">
-              Hello, and welcome to my professional webpage. I created it to showcase my experience and talents 
+              Hello, and welcome to my professional webpage. <br/>I created it to showcase my experience and talents 
               as a software developer. Feel free to check out my resume and portfolio, and contact me if you have 
               any inquiries.
             </div>
-          <div className="pictureText">
-            <img id="headshot" src={headshot}/>
-            <div className="bio2">
+          <div className="">
+            <img ALIGN="left" id="headshot" style={{paddingRight:"20px"}} src={headshot}/>
+            <div className="">
               I have 2 years of experience with workplace automation using VBA.
               I also have 2 years of experience building and querying relational databases with SQL. Last year, 
               I began working on a mobile iOS application using React Native and Node.js. I have learned a lot 
