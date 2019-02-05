@@ -42,6 +42,9 @@ class Home extends Component {
           </div>
         </div>
         <div className="black-bar"></div>
+        <div className="footer">
+          Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome
+        </div>
       </div>
     );
   }
