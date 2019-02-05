@@ -19,38 +19,27 @@ class App extends Component {
     return (
       <div>
         <div className="background" id="scroll-up">
-        <head>
-          <title>Font Awesome 5 Icons</title>
-          <meta name='viewport' content='width=device-width, initial-scale=1'/>
-          <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
-        </head>
-        <div className="title1">
-          <div className="title1-container">
-            <div className="title1-sub-container" id="left-side">
-              <div className="name">Stan Chvetsov</div>
-              <div className="name-bottom">Aspiring Software Developer</div>
-            </div>
-                <div className="title1-sub-container">
-                  <div className="tooltip1">
-                    <span><img src={react} height = '36px'/></span>
-                  </div>
-                </div>
-                <div className="title1-sub-container">
-                  <div className="tooltip1">
-                    <span><img src={node} height = '36px'/></span>
-                  </div>
-                </div>
-                <div className="title1-sub-container">
-                  <div className="tooltip1">
-                    <span><img src={redux} height = '36px'/></span>
-                  </div>
-                </div>
+          <head>
+            <title>Font Awesome 5 Icons</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'/>
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
+          </head>
+          {/** className="title1-container title1" */}
+          <div className="title1-sub-container" style={{color:'white', flexWrap:'wrap', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-evenly'}}>
+              <div style={{flexWrap:'wrap', display:'flex', alignItems: 'center', flexDirection:'wrap', justifyContent:'space-around'}}>
+                <div className="name">Stan Chvetsov</div>
+                <div className="name-bottom">Aspiring Software Developer</div>
+              </div>
+              <div style={{display: 'flex', alignItems: 'center'}}>
+                <img src={react} height = '36px'/>
+                <img src={node} height = '36px'/>
+                <img src={redux} height = '36px'/>
                 <div className="title1-sub-container" id="right-side">
-                    <a href="https://www.linkedin.com/in/stan-chvetsov-224143a5/" target="_blank"><i id="linkedIn" className="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/stan-chvetsov-224143a5/" target="_blank"><i id="linkedIn" className="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>
+                </div>
               </div>
           </div>
-        </div>
         <div className="navbar1">
           <Link to ="/">Home</Link>
           <Link to="/resume">Resume</Link>
