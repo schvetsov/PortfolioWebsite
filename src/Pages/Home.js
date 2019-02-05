@@ -32,7 +32,7 @@ class Home extends Component {
               any inquiries.
             </div>
           <div className="">
-            <img ALIGN="left" id="headshot" style={{paddingRight:"20px"}} src={headshot}/>
+            <img ALIGN="left" id="headshot" style={{paddingLeft: "20px", paddingRight:"20px"}} src={headshot}/>
             <div className="">
               I have 2 years of experience with workplace automation using VBA.
               I also have 2 years of experience building and querying relational databases with SQL. Last year, 
