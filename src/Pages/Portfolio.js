@@ -22,7 +22,7 @@ class Portfolio extends Component {
                 <div className="pictureText">
                     <img className="logo1" src={pic2} />
                     <div className="logo1">
-                        I built this website completely from scratch with HTML and CSS using the React library. 
+                        I built this website completely from scratch with HTML, CSS, and Javascript using React. 
                         I did not use any templates or Bootstrap, because I wanted to learn the fundamentals of 
                         web design.
                     </div>
