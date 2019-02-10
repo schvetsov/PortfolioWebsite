@@ -269,7 +269,7 @@ a {
     }
 
     .slideshow-box {
-      height: 30vw;
+      height: 35vw;
     }
 
 
@@ -281,10 +281,11 @@ a {
   display: block;
   color: rgb(0, 0, 0);
   margin: auto;
-  padding: 0px 10vw 40px 10vw;
+  padding: 10px 10vw 100px 10vw;
   font-size: 14px;
   box-shadow: 5px 10px 18px #161616;
   overflow:hidden;
+  margin-bottom: 200px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -293,10 +294,11 @@ a {
     display: block;
     color: rgb(0, 0, 0);
     margin: auto;
-    padding: 0px 0px 40px 0px;
+    padding: 10px 0px 100px 0px;
     font-size: 14px;
     box-shadow: 5px 10px 18px #161616;
     overflow:hidden;
+    margin-bottom: 200px;
   }
 }
 
