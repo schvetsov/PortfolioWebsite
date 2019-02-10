@@ -46,22 +46,22 @@ class App extends Component {
           <div className="dropdown1">
             <div className="noselect">Portfolio</div>
               <div className="dropdown1-content">
-                <Link to="/project1">QuickQuote Mobile</Link>
-                <Link to="/project7">Portfolio Website</Link>
+                <Link to="/quickquote">QuickQuote Mobile</Link>
+                <Link to="/website">Portfolio Website</Link>
                 {/* <Link to="/project2">Import Algorithm</Link> */}
-                <Link to="/project4">Web Scraper</Link>
-                <Link to="/project6">Time Value of Money Calculator</Link>
+                <Link to="/webscraper">Web Scraper</Link>
+                <Link to="/tvmcalc">Time Value of Money Calculator</Link>
               </div>
             </div>
           </div>
           <Route exact path="/" exact component={Home} />
           {/* <Route path="/about" exact component={About} /> */}
           <Route path="/resume" exact component={Resume} />
-          <Route path="/project1" exact component={QuickQuote} />
+          <Route path="/quickquote" exact component={QuickQuote} />
           {/* <Route path="/project2" exact component={ImportAlg} /> */}
-          <Route path="/project4" exact component={WebScraper} />
-          <Route path="/project6" exact component={TVMCalc} />
-          <Route path="/project7" exact component={Portfolio} />
+          <Route path="/webscraper" exact component={WebScraper} />
+          <Route path="/tvmcalc" exact component={TVMCalc} />
+          <Route path="/website" exact component={Portfolio} />
         </div>
         <div className="footer">
           Credits: Photo: Mark Chvetsov, Font: Nauman by Jonathan Hill, Icons: FontAwesome

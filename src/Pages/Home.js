@@ -28,9 +28,9 @@ class Home extends Component {
           </div>
           <div className="">
             <img ALIGN="left" id="headshot" style={{paddingLeft: "20px", paddingRight:"20px"}} src={headshot}/>
-            <div className="">
-              Hello, and welcome to my professional webpage. I created it to showcase my experience and talents 
-              as a software developer. Feel free to check out my resume and portfolio, and contact me if you have 
+            <div className="bio3">
+              Hello, and welcome to my professional webpage. I created it to display the programming skills I have 
+              thus far accumulated. Feel free to check out my resume and portfolio, and contact me if you have 
               any inquiries.
               I have 2 years of experience with workplace automation using VBA.
               I also have 2 years of experience building and querying relational databases with SQL. Last year, 
