@@ -83,7 +83,6 @@ a {
     #right-side {
       display: inline;
       padding: 10px;
-      min-width: 150px;
     }
 
       .name {
@@ -117,6 +116,13 @@ a {
         font-size: 24px;
         color: rgb(255, 255, 255);
       }
+
+        .title-icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 40vw;
+        }
 
 /* MENU */
 
@@ -224,7 +230,7 @@ a {
   animation-name: fade;
   animation-iteration-count: infinite;
   animation-duration: 12s;
-  height: 34vh;
+  height: 30vw;
   object-fit: cover;
   z-index: 10;
   opacity: 0;
@@ -263,7 +269,7 @@ a {
     }
 
     .slideshow-box {
-      height: 34vh;
+      height: 30vw;
     }
 
 
@@ -275,10 +281,23 @@ a {
   display: block;
   color: rgb(0, 0, 0);
   margin: auto;
-  padding: 0px 0px 40px 0px;
+  padding: 0px 10vw 40px 10vw;
   font-size: 14px;
   box-shadow: 5px 10px 18px #161616;
   overflow:hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    background-color: rgb(211, 211, 211);
+    display: block;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 0px 0px 40px 0px;
+    font-size: 14px;
+    box-shadow: 5px 10px 18px #161616;
+    overflow:hidden;
+  }
 }
 
 .black-bar {

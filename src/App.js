@@ -30,10 +30,10 @@ class App extends Component {
                 <div className="name">Stan Chvetsov</div>
                 <div className="name-bottom">Aspiring Software Developer</div>
               </div>
-              <div style={{display: 'flex', alignItems: 'center'}}>
-                <img src={react} height = '36px'/>
-                <img src={node} height = '36px'/>
-                <img src={redux} height = '36px'/>
+              <div className="title-icons">
+                <div><img src={react} height = '36px'/></div>
+                <div><img src={node} height = '36px'/></div>
+                <div><img src={redux} height = '36px'/></div>
                 <div className="title1-sub-container" id="right-side">
                   <a href="https://www.linkedin.com/in/stan-chvetsov-224143a5/" target="_blank"><i id="linkedIn" className="fab fa-linkedin"></i></a>
                   <a href="https://github.com/schvetsov" target="_blank"><i id="gitHub" className="fab fa-github"></i></a>

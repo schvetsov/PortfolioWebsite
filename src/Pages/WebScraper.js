@@ -47,10 +47,7 @@ class WebScraper extends Component {
                     we have our license numbers of the physicians we want to look up. To the right we have a button 
                     that executes the macro. All the columns in between will be where our results show up.
                 </div>
-                <div className="hover-caption">
-                    (hover to enlarge)
-                    <img className="zoom2" src={pic3} />
-                </div>
+                <img className="full-image" src={pic3} />
                 <div className="bio">
                     The first step the macro takes is to manipulate the url of the website. The following 
                     is what the url looks like after we do the search. The last 5 numbers is the license number, 
@@ -63,10 +60,7 @@ class WebScraper extends Component {
                     This is what our search results look like when we do it manually. For this search, we are going 
                     to pull the Practice Address. I highlighted it with a red box in the image below.
                 </div>
-                <div className="hover-caption">
-                    (hover to enlarge)
-                    <img className="zoom2" src={pic5} />
-                </div>
+                <img className="full-image" src={pic5} />
                 <div className="bio">
                     The program locates the HTML element that contains the practice address, and splits the string up by 
                     address, county, state, and zip code, and places each piece in its own cell in the spreadsheet. 
@@ -74,10 +68,7 @@ class WebScraper extends Component {
                     can see, we extracted 28 addresses, in about 8 seconds. This is significantly 
                     faster than doing it manually, and saves us a lot of time.
                 </div>
-                <div className="hover-caption">
-                    (hover to enlarge)
-                    <img className="zoom2" src={pic4} />
-                </div>
+                <img className="full-image" src={pic4} />
             </div>
             <div className="black-bar">
             </div>
