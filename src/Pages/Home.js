@@ -29,10 +29,9 @@ class Home extends Component {
           <div className="">
             <img ALIGN="left" id="headshot" style={{paddingLeft: "20px", paddingRight:"20px"}} src={headshot}/>
             <div className="bio3">
-              Hello, and welcome to my professional webpage. I created it to display the programming skills I have 
-              thus far accumulated. Feel free to check out my resume and portfolio, and contact me if you have 
-              any inquiries.
-              I have 2 years of experience with workplace automation using VBA.
+              Hello, and welcome to my professional webpage. I created this website entirely from scratch with HTML, CSS, and Javascript, 
+              and wrapped it all up with React. Feel free to check out all of my projects in my portfolio, accessable from the navigation menu 
+              above. I have 2 years of experience with workplace automation using VBA.
               I also have 2 years of experience building and querying relational databases with SQL. Last year, 
               I began working on a mobile iOS application using React Native and Node.js. I have learned a lot 
               since then, and look forward to keep learning and applying my skills to future projects.
