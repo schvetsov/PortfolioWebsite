@@ -83,6 +83,7 @@ a {
     #right-side {
       display: inline;
       padding: 10px;
+      min-width: 105px;
     }
 
       .name {
