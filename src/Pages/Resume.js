@@ -10,7 +10,7 @@ class Resume extends Component {
           <div className="background">
             <ScrollButton scrollStepInPx="800" delayInMs="0"/>
             <div style={{ width: "800px", margin: 'auto' }}>
-              <embed src={resumefile} width="800px" height="1050px" />
+              <embed src={resumefile} width="800px" height="1140px" />
             </div>
           </div> 
     );
