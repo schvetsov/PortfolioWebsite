@@ -7,6 +7,7 @@ import './App.css';
 import Home from './Pages/Home';
 // import About from './About';
 import Resume from './Pages/Resume';
+import GoogleMaps from './Pages/Map';
 import QuickQuote from './Pages/QuickQuote';
 import TVMCalc from './Pages/TVMCalc';
 import WebScraper from './Pages/WebScraper';
@@ -19,11 +20,11 @@ class App extends Component {
     return (
       <div>
         <div className="background" id="scroll-up">
-          <head>
+          <div>
             <title>Font Awesome 5 Icons</title>
             <meta name='viewport' content='width=device-width, initial-scale=1'/>
             <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
-          </head>
+          </div>
           {/** className="title1-container title1" */}
           <div className="title1-sub-container" style={{color:'white', flexWrap:'wrap', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'space-evenly'}}>
               <div style={{flexWrap:'wrap', display:'flex', alignItems: 'center', flexDirection:'wrap', justifyContent:'space-around'}}>
@@ -43,6 +44,7 @@ class App extends Component {
         <div className="navbar1">
           <Link to ="/">Home</Link>
           <Link to="/resume">Resume</Link>
+          <Link to="/map">Google Maps</Link>
           <div className="dropdown1">
             <div className="noselect">Portfolio</div>
               <div className="dropdown1-content">
@@ -57,6 +59,7 @@ class App extends Component {
           <Route exact path="/" exact component={Home} />
           {/* <Route path="/about" exact component={About} /> */}
           <Route path="/resume" exact component={Resume} />
+          <Route path="/map" exact component={GoogleMaps} />
           <Route path="/quickquote" exact component={QuickQuote} />
           {/* <Route path="/project2" exact component={ImportAlg} /> */}
           <Route path="/webscraper" exact component={WebScraper} />

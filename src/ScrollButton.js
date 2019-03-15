@@ -46,10 +46,21 @@ componentWillUnmount(){
     
     render () {
         const classHide = this.state.isHide ? '' : 'hide';
-        return <a title='Back to top' className={`scroll-top ${classHide}`}
-                 onClick={ () => { this.scrollToTop(); }}>
-                  <span className="scroll-top-text">Top</span>
-                </a>;
+        return (
+            <div>
+                          <div>
+            <title>Font Awesome 5 Icons</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'/>
+            <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'/>
+          </div>
+                <a title='Back to top' className={`scroll-top ${classHide}`}
+                    onClick={ () => { this.scrollToTop(); }}>
+                    <span className="scroll-top-text">
+                        <i id="arrow-up" className="fa fa-eject"></i>
+                    </span>
+                </a>
+            </div>
+        );
      }
   }
 

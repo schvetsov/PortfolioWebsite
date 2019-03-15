@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import '../App.css';
-import pic1 from '../QQScreenShots/1.png';
-import pic2 from '../QQScreenShots/2.png';
-import pic6 from '../QQScreenShots/6.png';
-import pic7 from '../QQScreenShots/7.png';
-import pic8 from '../QQScreenShots/8.png';
-import pic9 from '../QQScreenShots/9.png';
-import pic10 from '../QQScreenShots/10.jpg';
-import pic11 from '../QQScreenShots/26.png';
+import pic1 from '../Proj1-QuickQuote/1.png';
+import pic2 from '../Proj1-QuickQuote/2.png';
+import pic6 from '../Proj1-QuickQuote/6.png';
+import pic7 from '../Proj1-QuickQuote/7.png';
+import pic8 from '../Proj1-QuickQuote/8.png';
+import pic9 from '../Proj1-QuickQuote/9.png';
+import pic10 from '../Proj1-QuickQuote/10.jpg';
+import pic11 from '../Proj1-QuickQuote/26.png';
 import ScrollButton from '../ScrollButton';
 
 class QuickQuote extends Component {
@@ -43,12 +43,12 @@ class QuickQuote extends Component {
                         <tr>
                             <td className="colone">Front-End:</td>
                             <td className="coltwo">React Native</td>
-                            <td className="colthree">A framework for building native apps with React.</td>
+                            <td className="colthree">A framework for building native apps with React</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
-                            <td className="coltwo">RN Navigation</td>
-                            <td className="colthree">A complete native navigation solution by Wix</td>
+                            <td className="coltwo">React Navigation</td>
+                            <td className="colthree">Routing and navigation library</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
@@ -68,17 +68,17 @@ class QuickQuote extends Component {
                         <tr>
                             <td className="colone">Back-End</td>
                             <td className="coltwo">Node</td>
-                            <td className="colthree">JS run-time environment that executes JS code outside of a browser.</td>
+                            <td className="colthree">JS run-time environment that executes JS code outside of a browser</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">Express</td>
-                            <td className="colthree">A web application framework for Node.js, used for routing.</td>
+                            <td className="colthree">A web application framework for Node.js, used for routing</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">Mlab</td>
-                            <td className="colthree">Fully managed cloud database service that hosts MongoDB databases.</td>
+                            <td className="colthree">Fully managed cloud database service that hosts MongoDB databases</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
@@ -88,27 +88,27 @@ class QuickQuote extends Component {
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">PDFMake</td>
-                            <td className="colthree">Client/server side PDF printing in pure JavaScript.</td>
+                            <td className="colthree">Client/server side PDF printing in pure JavaScript</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
-                            <td className="coltwo">Nodemailer</td>
-                            <td className="colthree">A module for Node.js to send emails.</td>
+                            <td className="coltwo">Mailgun</td>
+                            <td className="colthree">Transactional email API</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">Bcrypt</td>
-                            <td className="colthree">A cross platform file encryption utility.</td>
+                            <td className="colthree">A cross platform file encryption utility</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">JWT</td>
-                            <td className="colthree">A means of representing claims to be transferred between two parties.</td>
+                            <td className="colthree">A means of representing claims to be transferred between two parties</td>
                         </tr>
                         <tr>
                             <td className="colone"></td>
                             <td className="coltwo">Validator</td>
-                            <td className="colthree">A library of string validators and sanitizers.</td>
+                            <td className="colthree">A library of string validators and sanitizers</td>
                         </tr>
                         <tr>
                             <td><br /></td>

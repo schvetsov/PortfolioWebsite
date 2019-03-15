@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../App.css';
-import pic1 from '../WSScreenShots/1.png';
-import pic2 from '../WSScreenShots/2.png';
-import pic3 from '../WSScreenShots/3.png';
-import pic4 from '../WSScreenShots/4.png';
-import pic5 from '../WSScreenShots/5.png';
-import pic6 from '../WSScreenShots/6.png';
-import vba from '../WSScreenShots/vba.png';
+import pic1 from '../Proj3-WebScraper/1.png';
+import pic2 from '../Proj3-WebScraper/2.png';
+import pic3 from '../Proj3-WebScraper/3.png';
+import pic4 from '../Proj3-WebScraper/4.png';
+import pic5 from '../Proj3-WebScraper/5.png';
+import pic6 from '../Proj3-WebScraper/6.png';
+import vba from '../Proj3-WebScraper/vba.png';
 import ScrollButton from '../ScrollButton';
 
 class WebScraper extends Component {

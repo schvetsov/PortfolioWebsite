@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import '../App.css';
-import pic1 from '../TVMScreenShots/19.png';
-import pic2 from '../TVMScreenShots/20.png';
-import pic3 from '../TVMScreenShots/21.png';
-import pic4 from '../TVMScreenShots/22.png';
-import pic5 from '../TVMScreenShots/23.png';
-import pic6 from '../TVMScreenShots/24.png';
-import pic7 from '../TVMScreenShots/25.png';
-import java from '../TVMScreenShots/java.png';
+import pic1 from '../Proj4-TVMCalc/19.png';
+import pic2 from '../Proj4-TVMCalc/20.png';
+import pic3 from '../Proj4-TVMCalc/21.png';
+import pic4 from '../Proj4-TVMCalc/22.png';
+import pic5 from '../Proj4-TVMCalc/23.png';
+import pic6 from '../Proj4-TVMCalc/24.png';
+import pic7 from '../Proj4-TVMCalc/25.png';
+import java from '../Proj4-TVMCalc/java.png';
 import ScrollButton from '../ScrollButton';
 
 class TVMCalc extends Component {
