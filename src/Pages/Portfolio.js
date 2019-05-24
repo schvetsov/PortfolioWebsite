@@ -16,7 +16,7 @@ class Portfolio extends Component {
                 <div className="sub-container">
                     <div className="section-title">
                         Portfolio Website<br/><br/>
-                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/PortfolioWebsite">https://github.com/schvetsov/PortfolioWebsite</a>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/portfolio-website">https://github.com/schvetsov/portfolio-website</a>
                     </div>
                 </div>
                 <div className="pictureText">

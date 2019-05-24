@@ -19,7 +19,7 @@ class WebScraper extends Component {
                 <div className="sub-container">
                     <div className="section-title">
                         Web Scraper<br/><br/>
-                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/WebScraper3">https://github.com/schvetsov/WebScraper3</a>
+                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/excel-webscraper-address">https://github.com/schvetsov/excel-webscraper-address</a>
                     </div>
                 </div>
                 <div className="pictureText">
