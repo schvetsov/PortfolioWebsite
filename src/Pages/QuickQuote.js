@@ -21,7 +21,6 @@ class QuickQuote extends Component {
                 <div className="sub-container">
                     <div className="section-title">
                         QuickQuote Mobile<br /><br/>
-                        Github: <a className="github-link" target="_blank" href="https://github.com/schvetsov/QuickQuoteMobile">https://github.com/schvetsov/QuickQuoteMobile</a>
                     </div>
                 </div>
                 <div className="bio">
